@@ -1,0 +1,6 @@
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DTODLL\bin\Debug\DTODLL.dll
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DTODLL\bin\Debug\DTODLL.pdb
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DTODLL\obj\Debug\DTODLL.csprojResolveAssemblyReference.cache
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DTODLL\obj\Debug\DTODLL.csproj.CoreCompileInputs.cache
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DTODLL\obj\Debug\DTODLL.dll
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DTODLL\obj\Debug\DTODLL.pdb

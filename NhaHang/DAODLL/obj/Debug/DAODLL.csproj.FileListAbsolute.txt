@@ -1,0 +1,10 @@
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\bin\Debug\DAODLL.dll.config
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\bin\Debug\DAODLL.dll
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\bin\Debug\DAODLL.pdb
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\bin\Debug\Biz.Lib.Helpers.dll
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\bin\Debug\DTODLL.dll
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\bin\Debug\DTODLL.pdb
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\obj\Debug\DAODLL.csprojResolveAssemblyReference.cache
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\obj\Debug\DAODLL.csproj.CoreCompileInputs.cache
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\obj\Debug\DAODLL.dll
+C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\DAODLL\obj\Debug\DAODLL.pdb

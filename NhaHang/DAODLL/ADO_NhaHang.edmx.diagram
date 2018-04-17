@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0777d0583be04a19aab4bf9f942b043d" Name="Diagram1">
+        <EntityTypeShape EntityType="NhaHangModel.BanAn" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.ChiTietKH" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.ChiTietPN" Width="1.5" PointX="12.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.HoaDon" Width="1.5" PointX="10.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.KhachHang" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.KhuVuc" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.LoaiBan" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.ManHinh" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.MonAn" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NguoiDung" Width="1.5" PointX="9.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NguoiDungNhomNguoiDung" Width="1.5" PointX="12" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NguyenLieu" Width="1.5" PointX="10.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NhaCungCap" Width="1.5" PointX="8.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.Nhan_Vien" Width="1.5" PointX="8.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NhomMonAn" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NhomNguoiDung" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.NhomNguyenLieu" Width="1.5" PointX="8.25" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.PhanQuyen" Width="1.5" PointX="12" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.PhieuDatBan" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.PhieuNhap" Width="1.5" PointX="10.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.SoLuongMonAn" Width="1.5" PointX="7.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel.TenLoaiKhach" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="NhaHangModel.FK_BANAN_BA_PD_PHIEUDAT" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_BANAN_BAN_KHUVU_KHUVUC" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_BANAN_LOAI_BAN_LOAIBAN" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_CHITIETK_KH_CT_KHACHHAN" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_CHITIETP_CHITIETPN_NGUYENLI" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_ChiTietPN_PhieuNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_HoaDon_Nhan_Vien" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_HOADON_PD_HD_PHIEUDAT" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_KHACHHAN_LOAI_KH_TENLOAIK" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_PHIEUDAT_KH_PD_KHACHHAN" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_PhanQuyen_ManHinh" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_MONAN_NHOM_MA_NHOMMONA" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_SOLUONGM_SOLUONGMO_MONAN" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_NguoiDungNhomNguoiDung_NguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_NguoiDungNhomNguoiDung_NhomNguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_NguyenLieu_NhomNguyenLieu" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_PHIEUNHA_NCC_PN_NHACUNGC" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_PhieuNhap_Nhan_Vien" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_PhanQuyen_NhomNguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.FK_SOLUONGM_SOLUONGMO_PHIEUDAT" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel.ChiTiet_NguyenLieu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
