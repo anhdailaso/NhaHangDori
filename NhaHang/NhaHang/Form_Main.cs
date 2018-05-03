@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUSDLL;
 using DevComponents.DotNetBar;
 
 namespace NhaHang
@@ -120,6 +121,65 @@ namespace NhaHang
         private void customColorBlender1_SelectedColorChanged_1(object sender, EventArgs e)
         {
             styleManager1.ManagerColorTint = customColorBlender1.SelectedColor;
+        }
+        private void btn_kho_Click(object sender, EventArgs e)
+        {
+            NguyenLieu kh = new NguyenLieu();
+            additem(kh, "Quản Lý Kho Nguyên Liệu");
+        }
+        private void btn_thucdon_Click(object sender, EventArgs e)
+        {
+            Form_MonAn kh = new Form_MonAn();
+            additem(kh, "Quản Lý Mốn Ăn");
+        }
+        private void kHUVUCBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.kHUVUCBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDori);
+        }
+        private void Form_Main_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDori.KHUVUC' table. You can move, or remove it, as needed.
+            this.kHUVUCTableAdapter.Fill(this.dataDori.KHUVUC);
+        }
+
+        private void ribbonTabItem_goimon_Click(object sender, EventArgs e)
+        {
+            ribbonPanel5.Controls.Clear();
+            this.kHUVUCTableAdapter.Fill(this.dataDori.KHUVUC);
+            loadKhuvuc();
+        }
+        public void loadKhuvuc()
+        {
+            for (int i = 0; i < dataDori.KHUVUC.Rows.Count; i++)
+            {
+                taoKhu(dataDori.KHUVUC.Rows[i][1].ToString(), dataDori.KHUVUC.Rows[i][0].ToString());
+            }
+        }
+        public void taoKhu(string ten, string ma)
+        {
+            RibbonBar bar = new RibbonBar();
+            bar.Tag = ma.ToString();
+            bar.MinimumSize = new Size(90, 90);
+            bar.Size = new Size(97, 93);
+            bar.Text = ten;
+            Button btn = new Button();
+            Image im = Image.FromFile(Application.StartupPath + "\\image\\icon2.png");
+            btn.Image = im;
+            btn.Width = 97;
+            btn.Height = 80;
+            btn.Click += btn_Click;
+            btn.Tag = ma;
+            bar.Controls.Add(btn);
+            ribbonPanel5.Controls.Add(bar);
+        }
+        void btn_Click(object sender, EventArgs e)
+        {
+            Button bt = (Button)sender;
+            bientoancuc.makhuvuc = (string)bt.Tag;
+            Form_GoiMon kh = new Form_GoiMon();
+            additem(kh, "Hệ Thống Quản Lý thông tin dịch vụ");
         }
     }
 }

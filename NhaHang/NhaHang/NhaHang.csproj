@@ -50,6 +50,14 @@
     <Reference Include="TelerikCommon, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDori.cs">
+      <DependentUpon>DataDori.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataDori.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataDori.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,11 +70,23 @@
     <Compile Include="Form_GoiMon.Designer.cs">
       <DependentUpon>Form_GoiMon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_MonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MonAn.Designer.cs">
+      <DependentUpon>Form_MonAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_NhanVien.Designer.cs">
       <DependentUpon>Form_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NhomND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NhomND.Designer.cs">
+      <DependentUpon>Form_NhomND.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_PhanQuyen.cs">
       <SubType>Form</SubType>
@@ -98,12 +118,6 @@
     <Compile Include="Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_NhomND.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_NhomND.Designer.cs">
-      <DependentUpon>Form_NhomND.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_QLKhoNguyenLieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,8 +131,32 @@
       <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </Compile>
     <Compile Include="MaTuTong.cs" />
+    <Compile Include="NguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NguyenLieu.Designer.cs">
+      <DependentUpon>NguyenLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowBan.Designer.cs">
+      <DependentUpon>ShowBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowMon.Designer.cs">
+      <DependentUpon>ShowMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowNguyenLieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowNguyenLieu.Designer.cs">
+      <DependentUpon>ShowNguyenLieu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MonAn.resx">
+      <DependentUpon>Form_MonAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_NhanVien.resx">
       <DependentUpon>Form_NhanVien.cs</DependentUpon>
@@ -152,6 +193,9 @@
     <EmbeddedResource Include="Form_ResetPass.resx">
       <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NguyenLieu.resx">
+      <DependentUpon>NguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,6 +206,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowBan.resx">
+      <DependentUpon>ShowBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMon.resx">
+      <DependentUpon>ShowMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowNguyenLieu.resx">
+      <DependentUpon>ShowNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataDori.xsc">
+      <DependentUpon>DataDori.xsd</DependentUpon>
+    </None>
+    <None Include="DataDori.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataDori.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataDori.xss">
+      <DependentUpon>DataDori.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

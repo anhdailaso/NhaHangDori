@@ -53,15 +53,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADO_NhaHang.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADO_NhaHang.Context.tt</DependentUpon>
+    <Compile Include="BanAn.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
     </Compile>
-    <Compile Include="ADO_NhaHang.Designer.cs">
+    <Compile Include="ChiTietKH.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietPN.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO_KhachHang.cs" />
+    <Compile Include="Doridata.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ADO_NhaHang.edmx</DependentUpon>
+      <DependentUpon>Doridata.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Doridata.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Doridata.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Doridata.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhuVuc.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiBan.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManHinh.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MonAn.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDungNhomNguoiDung.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NguyenLieu.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCungCap.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nhan_Vien.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhomMonAn.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhomNguoiDung.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhomNguyenLieu.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuDatBan.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuNhap.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -70,6 +136,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="DAO_QL_NguoiDung.cs" />
+    <Compile Include="SoLuongMonAn.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TenLoaiKhach.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vc_user_Result.cs">
+      <DependentUpon>Doridata.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTODLL\DTODLL.csproj">
@@ -78,15 +153,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="ADO_NhaHang.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ADO_NhaHang.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ADO_NhaHang.edmx.diagram">
-      <DependentUpon>ADO_NhaHang.edmx</DependentUpon>
-    </None>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Doridata.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Doridata.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Doridata.edmx.diagram">
+      <DependentUpon>Doridata.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -95,13 +170,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ADO_NhaHang.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ADO_NhaHang.Context.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Doridata.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Doridata.edmx</DependentUpon>
+      <LastGenOutput>Doridata.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Doridata.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Doridata.edmx</DependentUpon>
+      <LastGenOutput>Doridata.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

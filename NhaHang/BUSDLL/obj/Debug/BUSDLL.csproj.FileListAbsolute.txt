@@ -18,3 +18,25 @@ C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\BUSDLL\obj\Debug\BUSDL
 C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\BUSDLL\obj\Debug\BUSDLL.csproj.CoreCompileInputs.cache
 C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\BUSDLL\obj\Debug\BUSDLL.dll
 C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\BUSDLL\obj\Debug\BUSDLL.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\BUSDLL.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\BUSDLL.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DAODLL.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DTODLL.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\EntityFramework.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\Telerik.WinControls.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\TelerikCommon.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DAODLL.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DAODLL.dll.config
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DTODLL.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\EntityFramework.xml
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\Telerik.WinControls.xml
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\obj\Debug\BUSDLL.csprojResolveAssemblyReference.cache
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\obj\Debug\BUSDLL.csproj.CoreCompileInputs.cache
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\obj\Debug\BUSDLL.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\BUSDLL\obj\Debug\BUSDLL.pdb

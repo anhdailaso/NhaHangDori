@@ -9,7 +9,7 @@ namespace BUSDLL
     public static class bientoancuc
     {
         public static bool trangthai=false;
-        public static string manhanvien;
+        public static int manhanvien=1;
         public static string tendn;
         public static string pass;
 

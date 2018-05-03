@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bientoancuc.cs" />
+    <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_QL_NguoiDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xulianhien.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAODLL\DAODLL.csproj">

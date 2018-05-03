@@ -33,5 +33,16 @@ namespace NhaHang.Properties {
                 return ((string)(this["NhaHangConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-ELPES6T\\ANHDAI;Initial Catalog=QL_NhaHang;Persist Security In" +
+            "fo=True;User ID=sa;Password=anhdailaso1")]
+        public string QL_NhaHangConnectionString {
+            get {
+                return ((string)(this["QL_NhaHangConnectionString"]));
+            }
+        }
     }
 }
