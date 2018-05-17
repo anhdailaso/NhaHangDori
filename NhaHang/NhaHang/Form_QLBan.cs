@@ -24,9 +24,7 @@ namespace NhaHang
             this.Validate();
             this.kHUVUCBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.dataDori);
-
         }
-
         private void Form_QLBan_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dataDori.BAN' table. You can move, or remove it, as needed.
@@ -43,7 +41,8 @@ namespace NhaHang
             tabControl1.Tabs.Clear();
             for (int i = 0; i < dataDori.KHUVUC.Rows.Count; i++)
             {
-               TabItem newTab = tabControl1.CreateTab("Bàn" + dataDori.KHUVUC.Rows[i][1].ToString());
+               TabItem newTab = tabControl1.CreateTab(dataDori.KHUVUC.Rows[i][1].ToString());
+                newTab.Click += NewTab_Click;
                 TabControlPanel panel = (TabControlPanel)newTab.AttachedControl;
                 FlowLayoutPanel flow = new FlowLayoutPanel();
                 flow.Dock = DockStyle.Fill;
@@ -58,6 +57,16 @@ namespace NhaHang
                 panel.Controls.Add(flow);
             }
         }
+
+        private void NewTab_Click(object sender, EventArgs e)
+        {
+           if(sender is TabItem)
+            {
+                string tinhtrang = dataDori.KHUVUC.Where(p => p.TenKV.Equals(sender.ToString())).Select(p => p.TinhTrang).FirstOrDefault().ToString();
+                bientoancuc.loaikhu = tinhtrang;
+            }
+        }
+
         public void loadban(int makhu, FlowLayoutPanel flow)
         {
             var ban = dataDori.BAN.Where(p=>p.MaKV.Equals(makhu)).ToList();
@@ -160,7 +169,29 @@ namespace NhaHang
         {
             this.kHUVUCBindingSource.CancelEdit();
             xulianhien.Instance.battac(btnThem, btn_xoa, btnSua, btnHuy, btn_Luu, panel6, true);
-
+        }
+        private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            if (bientoancuc.loaikhu == "ban")
+            {
+                CTBan ban = new CTBan();
+                ban.ShowDialog();
+            }
+            else
+            {
+                CTPhong phong = new CTPhong();
+                phong.ShowDialog();
+            }
+        }
+        private void reloatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDori.BAN' table. You can move, or remove it, as needed.
+            this.bANTableAdapter.Fill(this.dataDori.BAN);
+            // TODO: This line of code loads data into the 'dataDori.PHONG' table. You can move, or remove it, as needed.
+            this.pHONGTableAdapter.Fill(this.dataDori.PHONG);
+            this.kHUVUCTableAdapter.Fill(this.dataDori.KHUVUC);
+            loadkv();
         }
     }
 }

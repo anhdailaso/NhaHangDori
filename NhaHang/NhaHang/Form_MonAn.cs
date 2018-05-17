@@ -39,11 +39,10 @@ namespace NhaHang
             maMATextBoxX.Enabled = false;
             xulianhien.Instance.battac(btnThem, btn_xoa, btnSua, btnHuy, btn_Luu, panel_tt, true);
             tatcanguyenlieu();
-            battac(buttonX1, buttonX2,panel11, true);
+            battac(buttonX1, buttonX2, panel11, true);
         }
         public void tatcanguyenlieu()
         {
-
             var nl = dataDori.NGUYENLIEU.Select(p => p).ToList();
             foreach (var item in nl)
             {
@@ -104,7 +103,7 @@ namespace NhaHang
                 this.Validate();
                 this.mONANBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.dataDori);
-                if(co==true)
+                if (co == true)
                 {
                     cONGTHUCMATableAdapter.Insert(Convert.ToInt32(maMATextBoxX.Text.ToString()));
                 }
@@ -144,7 +143,7 @@ namespace NhaHang
             }
         }
 
-            private void textBoxX1_TextChanged(object sender, EventArgs e)
+        private void textBoxX1_TextChanged(object sender, EventArgs e)
         {
             try
             {
@@ -199,7 +198,12 @@ namespace NhaHang
         public void battac(ButtonX them, ButtonX sua, Panel dulieu, bool a)
         {
             them.Enabled = sua.Enabled = a;
-             dulieu.Enabled= !a;
+            dulieu.Enabled = !a;
+        }
+
+        private void fillToolStripButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

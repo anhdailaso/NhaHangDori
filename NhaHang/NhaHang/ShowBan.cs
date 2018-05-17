@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NhaHang;
-
+using BUSDLL;
 
 namespace NhaHang
 {
@@ -24,12 +24,12 @@ namespace NhaHang
         {
             labelX1.Text = maban;
             this.Tag = maban;
-            if (tinhtrang == "con")
+            if (tinhtrang == "Còn")
             {
                 pictureBox1.Image = Image.FromFile(Application.StartupPath + "\\image\\bantrong.png");
             }
             else
-                if (tinhtrang == "het")
+                if (tinhtrang == "Hết")
                 {
                     pictureBox1.Image = Image.FromFile(Application.StartupPath + "\\image\\daco.png");
                 }
@@ -47,9 +47,9 @@ namespace NhaHang
 
         }
         private void pictureBox1_Click_1(object sender, EventArgs e)
-        {     
-            //bientoancuc.mabantheokhu = this.Tag.ToString();
-            //if (ButtonClick != null) ButtonClick(sender, e);           
+        {
+            bientoancuc.mabantheokhu = this.Tag.ToString();
+            if (ButtonClick != null) ButtonClick(sender, e);
         }
     }
 }

@@ -178,8 +178,17 @@ namespace NhaHang
         {
             Button bt = (Button)sender;
             bientoancuc.makhuvuc = (string)bt.Tag;
-            Form_GoiMon kh = new Form_GoiMon();
-            additem(kh, "Hệ Thống Quản Lý thông tin dịch vụ");
+            var loai = dataDori.KHUVUC.Where(p => p.MaKV.Equals(Convert.ToInt32(bt.Tag))).Select(p => p.TinhTrang).FirstOrDefault();
+            if (loai == "ban")
+            {
+                Form_GoiMon kh = new Form_GoiMon();
+                additem(kh, "Hệ Thống Quản Lý Dịch Vụ Bàn");
+            }
+            else
+            {
+                Form_BanAn kh = new Form_BanAn();
+                additem(kh, "Hệ Thống Quản Lý Dịch Vụ Bàn");
+            }
         }
     }
 }

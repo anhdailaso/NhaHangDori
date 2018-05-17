@@ -22,5 +22,8 @@ namespace BUSDLL
         public static int soluoncon;
         public static int soluongmongoi;
         public static bool co=false;
+
+        public static string loaikhu;
+        public static string tinhtrangban;
     }
 }

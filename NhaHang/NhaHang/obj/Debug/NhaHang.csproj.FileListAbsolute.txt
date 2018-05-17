@@ -53,11 +53,15 @@ C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.pdb
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.dll.config
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\EntityFramework.xml
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.csprojResolveAssemblyReference.cache
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.CTBan.resources
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.CTPhong.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.FormKhachHang.resources
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_BanAn.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_Connnect.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_GoiMon.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_Login.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_Main.resources
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_MonAn.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_NhanVien.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_NhomND.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_PhanQuyen.resources
@@ -74,4 +78,3 @@ C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.exe.licenses
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.csproj.CoreCompileInputs.cache
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.exe
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.pdb
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_MonAn.resources

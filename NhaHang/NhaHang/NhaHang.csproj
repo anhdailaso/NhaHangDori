@@ -50,6 +50,18 @@
     <Reference Include="TelerikCommon, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTBan.Designer.cs">
+      <DependentUpon>CTBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTPhong.Designer.cs">
+      <DependentUpon>CTPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataDori.cs">
       <DependentUpon>DataDori.xsd</DependentUpon>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="FormKhachHang.Designer.cs">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BanAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BanAn.Designer.cs">
+      <DependentUpon>Form_BanAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_GoiMon.cs">
       <SubType>Form</SubType>
@@ -157,8 +175,17 @@
     <Compile Include="ShowNguyenLieu.Designer.cs">
       <DependentUpon>ShowNguyenLieu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CTBan.resx">
+      <DependentUpon>CTBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTPhong.resx">
+      <DependentUpon>CTPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BanAn.resx">
+      <DependentUpon>Form_BanAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Connnect.resx">
       <DependentUpon>Form_Connnect.cs</DependentUpon>
