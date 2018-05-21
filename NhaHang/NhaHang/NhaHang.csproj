@@ -82,6 +82,12 @@
     <Compile Include="Form_BanAn.Designer.cs">
       <DependentUpon>Form_BanAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ChuyenBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChuyenBan.Designer.cs">
+      <DependentUpon>Form_ChuyenBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_GoiMon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_BanAn.resx">
       <DependentUpon>Form_BanAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChuyenBan.resx">
+      <DependentUpon>Form_ChuyenBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Connnect.resx">
       <DependentUpon>Form_Connnect.cs</DependentUpon>

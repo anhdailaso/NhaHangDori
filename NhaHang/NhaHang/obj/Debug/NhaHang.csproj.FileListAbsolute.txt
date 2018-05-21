@@ -57,6 +57,7 @@ C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.CTBan.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.CTPhong.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.FormKhachHang.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_BanAn.resources
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_ChuyenBan.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_Connnect.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_GoiMon.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_Login.resources

@@ -105,13 +105,13 @@
             this.dVTTextBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.cT_CONGTHUCDataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nGUYENLIEUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nGUYENLIEUTableAdapter = new NhaHang.DataDoriTableAdapters.NGUYENLIEUTableAdapter();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cT_CONGTHUCDataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
             maMALabel = new System.Windows.Forms.Label();
             tenMALabel = new System.Windows.Forms.Label();
             dVTLabel = new System.Windows.Forms.Label();
@@ -147,8 +147,8 @@
             this.panel11.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nGUYENLIEUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cT_CONGTHUCDataGridViewX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUYENLIEUBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // maMALabel
@@ -273,7 +273,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(5, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(539, 459);
+            this.panel1.Size = new System.Drawing.Size(539, 457);
             this.panel1.TabIndex = 29;
             // 
             // mONANDataGridViewX
@@ -317,7 +317,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.mONANDataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.mONANDataGridViewX.Size = new System.Drawing.Size(535, 230);
+            this.mONANDataGridViewX.Size = new System.Drawing.Size(535, 228);
             this.mONANDataGridViewX.TabIndex = 32;
             this.mONANDataGridViewX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.mONANDataGridViewX_CellClick);
             // 
@@ -808,7 +808,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(544, 280);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(358, 235);
+            this.panel4.Size = new System.Drawing.Size(358, 233);
             this.panel4.TabIndex = 31;
             // 
             // panel10
@@ -818,7 +818,7 @@
             this.panel10.Controls.Add(this.buttonX1);
             this.panel10.Controls.Add(this.buttonX2);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 164);
+            this.panel10.Location = new System.Drawing.Point(0, 162);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(354, 67);
             this.panel10.TabIndex = 10;
@@ -885,7 +885,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(354, 231);
+            this.groupPanel2.Size = new System.Drawing.Size(354, 229);
             // 
             // 
             // 
@@ -930,7 +930,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(348, 210);
+            this.panel11.Size = new System.Drawing.Size(348, 208);
             this.panel11.TabIndex = 8;
             // 
             // maCTTextBoxX
@@ -992,7 +992,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(902, 280);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(223, 235);
+            this.panel6.Size = new System.Drawing.Size(223, 233);
             this.panel6.TabIndex = 32;
             // 
             // groupPanel1
@@ -1003,7 +1003,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(219, 231);
+            this.groupPanel1.Size = new System.Drawing.Size(219, 229);
             // 
             // 
             // 
@@ -1034,39 +1034,6 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 8;
             this.groupPanel1.Text = "đanh sách nguyên liệu của món ăn";
-            // 
-            // nGUYENLIEUBindingSource
-            // 
-            this.nGUYENLIEUBindingSource.DataMember = "NGUYENLIEU";
-            this.nGUYENLIEUBindingSource.DataSource = this.dataDori;
-            // 
-            // nGUYENLIEUTableAdapter
-            // 
-            this.nGUYENLIEUTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "DVT";
-            this.dataGridViewTextBoxColumn9.HeaderText = "DVT";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "KhoiLuong";
-            this.dataGridViewTextBoxColumn8.HeaderText = "KhoiLuong";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "MaNL";
-            this.dataGridViewTextBoxColumn7.HeaderText = "MaNL";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "MaCT";
-            this.dataGridViewTextBoxColumn6.HeaderText = "MaCT";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // cT_CONGTHUCDataGridViewX
             // 
@@ -1107,15 +1074,48 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.cT_CONGTHUCDataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.cT_CONGTHUCDataGridViewX.Size = new System.Drawing.Size(213, 210);
+            this.cT_CONGTHUCDataGridViewX.Size = new System.Drawing.Size(213, 208);
             this.cT_CONGTHUCDataGridViewX.TabIndex = 30;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "MaCT";
+            this.dataGridViewTextBoxColumn6.HeaderText = "MaCT";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "MaNL";
+            this.dataGridViewTextBoxColumn7.HeaderText = "MaNL";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "KhoiLuong";
+            this.dataGridViewTextBoxColumn8.HeaderText = "KhoiLuong";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "DVT";
+            this.dataGridViewTextBoxColumn9.HeaderText = "DVT";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // nGUYENLIEUBindingSource
+            // 
+            this.nGUYENLIEUBindingSource.DataMember = "NGUYENLIEU";
+            this.nGUYENLIEUBindingSource.DataSource = this.dataDori;
+            // 
+            // nGUYENLIEUTableAdapter
+            // 
+            this.nGUYENLIEUTableAdapter.ClearBeforeFill = true;
             // 
             // Form_MonAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1130, 517);
+            this.ClientSize = new System.Drawing.Size(1130, 515);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -1151,8 +1151,8 @@
             this.panel11.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nGUYENLIEUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cT_CONGTHUCDataGridViewX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUYENLIEUBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

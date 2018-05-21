@@ -366,7 +366,7 @@
             this.bANDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.bANDataGridViewX.Location = new System.Drawing.Point(5, 203);
             this.bANDataGridViewX.Name = "bANDataGridViewX";
-            this.bANDataGridViewX.Size = new System.Drawing.Size(581, 248);
+            this.bANDataGridViewX.Size = new System.Drawing.Size(581, 244);
             this.bANDataGridViewX.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn1
@@ -443,12 +443,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(591, 453);
+            this.ClientSize = new System.Drawing.Size(591, 449);
             this.Controls.Add(this.bANDataGridViewX);
             this.Controls.Add(this.panel_tt);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CTBan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CTBan";
             this.Load += new System.EventHandler(this.CTBan_Load);
             this.panel1.ResumeLayout(false);
