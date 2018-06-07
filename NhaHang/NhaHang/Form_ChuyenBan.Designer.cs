@@ -34,19 +34,26 @@
             this.btn_thoat = new DevComponents.DotNetBar.ButtonX();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.dataDori = new NhaHang.DataDori();
             this.bANBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bANTableAdapter = new NhaHang.DataDoriTableAdapters.BANTableAdapter();
             this.tableAdapterManager = new NhaHang.DataDoriTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bANBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 62);
+            this.panel1.Size = new System.Drawing.Size(667, 62);
             this.panel1.TabIndex = 3;
             // 
             // btn_thoat
@@ -71,7 +78,7 @@
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.Image")));
             this.btn_thoat.ImageFixedSize = new System.Drawing.Size(23, 23);
-            this.btn_thoat.Location = new System.Drawing.Point(491, 10);
+            this.btn_thoat.Location = new System.Drawing.Point(573, 10);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
             this.btn_thoat.Size = new System.Drawing.Size(80, 34);
@@ -86,10 +93,10 @@
             // 
             // 
             this.reflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.reflectionLabel1.Location = new System.Drawing.Point(216, 3);
+            this.reflectionLabel1.Location = new System.Drawing.Point(275, 3);
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.reflectionLabel1.Size = new System.Drawing.Size(169, 58);
+            this.reflectionLabel1.Size = new System.Drawing.Size(169, 53);
             this.reflectionLabel1.TabIndex = 0;
             this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Chuyển</i><font color=\"#B02B2C\">Bàn</font></font></b>";
             // 
@@ -102,54 +109,145 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(580, 288);
+            this.panel2.Size = new System.Drawing.Size(667, 275);
             this.panel2.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.flowLayoutPanel1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(243, 284);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(243, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(60, 284);
-            this.panel5.TabIndex = 1;
             // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.labelX4);
+            this.panel6.Controls.Add(this.labelX2);
             this.panel6.Controls.Add(this.flowLayoutPanel2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(303, 0);
+            this.panel6.Location = new System.Drawing.Point(385, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(273, 284);
+            this.panel6.Size = new System.Drawing.Size(278, 271);
             this.panel6.TabIndex = 2;
+            // 
+            // labelX4
+            // 
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelX4.Location = new System.Drawing.Point(164, 0);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(110, 19);
+            this.labelX4.TabIndex = 2;
+            this.labelX4.Text = "labelX4";
+            this.labelX4.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX2
+            // 
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelX2.ForeColor = System.Drawing.Color.Red;
+            this.labelX2.Location = new System.Drawing.Point(0, 0);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(139, 19);
+            this.labelX2.TabIndex = 1;
+            this.labelX2.Text = "<b>  Chọn Bàn Chuyển Đến :</b><font color=\"#000000\"></font>";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 19);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(274, 248);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.buttonX2);
+            this.panel5.Controls.Add(this.buttonX1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(284, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(101, 271);
+            this.panel5.TabIndex = 1;
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonX2.Location = new System.Drawing.Point(0, 107);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(97, 107);
+            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX2.TabIndex = 1;
+            this.buttonX2.Text = "HỦY";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonX1.Location = new System.Drawing.Point(0, 0);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(97, 107);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 0;
+            this.buttonX1.Text = "CHUYỂN";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.labelX3);
+            this.panel4.Controls.Add(this.labelX1);
+            this.panel4.Controls.Add(this.flowLayoutPanel1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(284, 271);
+            this.panel4.TabIndex = 0;
+            // 
+            // labelX3
+            // 
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labelX3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelX3.Location = new System.Drawing.Point(170, 0);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(110, 19);
+            this.labelX3.TabIndex = 1;
+            this.labelX3.Text = "labelX3";
+            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelX1.Location = new System.Drawing.Point(0, 0);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(141, 19);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "<b>  Chọn Bàn Cần Chuyển :</b>";
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 19);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(239, 280);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(280, 248);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(269, 280);
-            this.flowLayoutPanel2.TabIndex = 1;
             // 
             // dataDori
             // 
@@ -204,7 +302,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 353);
+            this.ClientSize = new System.Drawing.Size(677, 340);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -214,8 +312,9 @@
             this.Load += new System.EventHandler(this.Form_ChuyenBan_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bANBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -237,5 +336,11 @@
         private System.Windows.Forms.BindingSource bANBindingSource;
         private DataDoriTableAdapters.BANTableAdapter bANTableAdapter;
         private DataDoriTableAdapters.TableAdapterManager tableAdapterManager;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX labelX4;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }

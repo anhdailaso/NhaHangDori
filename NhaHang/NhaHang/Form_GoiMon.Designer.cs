@@ -36,7 +36,7 @@
             System.Windows.Forms.Label maKHLabel;
             System.Windows.Forms.Label hetHanLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_GoiMon));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
@@ -47,6 +47,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.chuyểnBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gộpBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
@@ -101,10 +105,6 @@
             this.hOADONTableAdapter = new NhaHang.DataDoriTableAdapters.HOADONTableAdapter();
             this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nHANVIENTableAdapter = new NhaHang.DataDoriTableAdapters.NHANVIENTableAdapter();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.chuyểnBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gộpBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             maPDLabel = new System.Windows.Forms.Label();
             ngayDatLabel = new System.Windows.Forms.Label();
             gioDatLabel = new System.Windows.Forms.Label();
@@ -118,6 +118,7 @@
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupPanel1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -137,7 +138,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.mONANBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // maPDLabel
@@ -339,7 +339,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(410, 550);
+            this.groupPanel1.Size = new System.Drawing.Size(410, 529);
             // 
             // 
             // 
@@ -379,8 +379,38 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 124);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(404, 402);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(404, 381);
             this.flowLayoutPanel1.TabIndex = 14;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chuyểnBànToolStripMenuItem,
+            this.gộpBànToolStripMenuItem,
+            this.resetToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 70);
+            // 
+            // chuyểnBànToolStripMenuItem
+            // 
+            this.chuyểnBànToolStripMenuItem.Name = "chuyểnBànToolStripMenuItem";
+            this.chuyểnBànToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.chuyểnBànToolStripMenuItem.Text = "Chuyển bàn";
+            this.chuyểnBànToolStripMenuItem.Click += new System.EventHandler(this.chuyểnBànToolStripMenuItem_Click);
+            // 
+            // gộpBànToolStripMenuItem
+            // 
+            this.gộpBànToolStripMenuItem.Name = "gộpBànToolStripMenuItem";
+            this.gộpBànToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.gộpBànToolStripMenuItem.Text = "Gộp Bàn";
+            this.gộpBànToolStripMenuItem.Click += new System.EventHandler(this.gộpBànToolStripMenuItem_Click);
+            // 
+            // resetToolStripMenuItem
+            // 
+            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.resetToolStripMenuItem.Text = "ReLoad";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -482,7 +512,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel4.Location = new System.Drawing.Point(769, 312);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(560, 239);
+            this.groupPanel4.Size = new System.Drawing.Size(560, 218);
             // 
             // 
             // 
@@ -521,7 +551,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(554, 119);
+            this.panel4.Size = new System.Drawing.Size(554, 98);
             this.panel4.TabIndex = 3;
             // 
             // monAnTheoPDDataGridViewX
@@ -535,21 +565,21 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.monAnTheoPDDataGridViewX.DataSource = this.monAnTheoPDBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.monAnTheoPDDataGridViewX.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.monAnTheoPDDataGridViewX.DefaultCellStyle = dataGridViewCellStyle1;
             this.monAnTheoPDDataGridViewX.Dock = System.Windows.Forms.DockStyle.Fill;
             this.monAnTheoPDDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.monAnTheoPDDataGridViewX.Location = new System.Drawing.Point(0, 0);
             this.monAnTheoPDDataGridViewX.Name = "monAnTheoPDDataGridViewX";
             this.monAnTheoPDDataGridViewX.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.monAnTheoPDDataGridViewX.RowHeadersVisible = false;
-            this.monAnTheoPDDataGridViewX.Size = new System.Drawing.Size(554, 119);
+            this.monAnTheoPDDataGridViewX.Size = new System.Drawing.Size(554, 98);
             this.monAnTheoPDDataGridViewX.TabIndex = 0;
             this.monAnTheoPDDataGridViewX.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.monAnTheoPDDataGridViewX_RowStateChanged);
             // 
@@ -604,7 +634,7 @@
             this.panel3.Controls.Add(this.labelX5);
             this.panel3.Controls.Add(this.btn_thanhtoan);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 119);
+            this.panel3.Location = new System.Drawing.Point(0, 98);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(554, 99);
             this.panel3.TabIndex = 2;
@@ -773,7 +803,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupPanel3.Location = new System.Drawing.Point(415, 312);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(354, 239);
+            this.groupPanel3.Size = new System.Drawing.Size(354, 218);
             // 
             // 
             // 
@@ -904,10 +934,12 @@
             this.tienCocTextBoxX.Border.Class = "TextBoxBorder";
             this.tienCocTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tienCocTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pHIEUDATMONBindingSource, "TienCoc", true));
+            this.tienCocTextBoxX.Enabled = false;
             this.tienCocTextBoxX.Location = new System.Drawing.Point(114, 95);
             this.tienCocTextBoxX.Name = "tienCocTextBoxX";
             this.tienCocTextBoxX.Size = new System.Drawing.Size(200, 20);
             this.tienCocTextBoxX.TabIndex = 9;
+            this.tienCocTextBoxX.Text = "0";
             // 
             // btn_dacban
             // 
@@ -1008,41 +1040,11 @@
             // 
             this.nHANVIENTableAdapter.ClearBeforeFill = true;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chuyểnBànToolStripMenuItem,
-            this.gộpBànToolStripMenuItem,
-            this.resetToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(139, 70);
-            // 
-            // chuyểnBànToolStripMenuItem
-            // 
-            this.chuyểnBànToolStripMenuItem.Name = "chuyểnBànToolStripMenuItem";
-            this.chuyểnBànToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.chuyểnBànToolStripMenuItem.Text = "Chuyển bàn";
-            this.chuyểnBànToolStripMenuItem.Click += new System.EventHandler(this.chuyểnBànToolStripMenuItem_Click);
-            // 
-            // gộpBànToolStripMenuItem
-            // 
-            this.gộpBànToolStripMenuItem.Name = "gộpBànToolStripMenuItem";
-            this.gộpBànToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gộpBànToolStripMenuItem.Text = "Gộp Bàn";
-            this.gộpBànToolStripMenuItem.Click += new System.EventHandler(this.gộpBànToolStripMenuItem_Click);
-            // 
-            // resetToolStripMenuItem
-            // 
-            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.resetToolStripMenuItem.Text = "ReLoad";
-            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
-            // 
             // Form_GoiMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1334, 553);
+            this.ClientSize = new System.Drawing.Size(1334, 532);
             this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel2);
@@ -1058,6 +1060,7 @@
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupPanel1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1079,7 +1082,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.mONANBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

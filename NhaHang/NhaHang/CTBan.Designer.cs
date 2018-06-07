@@ -347,6 +347,7 @@
             // bANDataGridViewX
             // 
             this.bANDataGridViewX.AutoGenerateColumns = false;
+            this.bANDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bANDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bANDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -366,7 +367,7 @@
             this.bANDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.bANDataGridViewX.Location = new System.Drawing.Point(5, 203);
             this.bANDataGridViewX.Name = "bANDataGridViewX";
-            this.bANDataGridViewX.Size = new System.Drawing.Size(581, 244);
+            this.bANDataGridViewX.Size = new System.Drawing.Size(581, 240);
             this.bANDataGridViewX.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn1
@@ -443,7 +444,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(591, 449);
+            this.ClientSize = new System.Drawing.Size(591, 445);
             this.Controls.Add(this.bANDataGridViewX);
             this.Controls.Add(this.panel_tt);
             this.Controls.Add(this.panel12);

@@ -104,24 +104,6 @@ namespace NhaHang
                 tabControl1.Tabs.Remove(tabControl1.SelectedTab);
             }
         }
-        //chỉnh mầu
-        //chỉnh mầu
-        private void buttonItem_metro_Click(object sender, EventArgs e)
-        {
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
-        }
-        private void buttonItem_offic_Click(object sender, EventArgs e)
-        {
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007VistaGlass;
-        }
-        private void btn_window_Click(object sender, EventArgs e)
-        {
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
-        }
-        private void customColorBlender1_SelectedColorChanged_1(object sender, EventArgs e)
-        {
-            styleManager1.ManagerColorTint = customColorBlender1.SelectedColor;
-        }
         private void btn_kho_Click(object sender, EventArgs e)
         {
             NguyenLieu kh = new NguyenLieu();
@@ -140,8 +122,72 @@ namespace NhaHang
         }
         private void Form_Main_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataDori.NGUOIDUNGNHOMNGUOIDUNG' table. You can move, or remove it, as needed.
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Fill(this.dataDori.NGUOIDUNGNHOMNGUOIDUNG);
+            // TODO: This line of code loads data into the 'dataDori.PHANQUYEN' table. You can move, or remove it, as needed.
+            this.pHANQUYENTableAdapter.Fill(this.dataDori.PHANQUYEN);
             // TODO: This line of code loads data into the 'dataDori.KHUVUC' table. You can move, or remove it, as needed.
             this.kHUVUCTableAdapter.Fill(this.dataDori.KHUVUC);
+            loadKhuvuc();
+            List<string> nhomND = getma();
+            foreach (string item in nhomND)
+            {
+                int n = (int)pHANQUYENTableAdapter.GetDataPQ(Convert.ToInt32(item.ToString())).Rows.Count;
+                for (int i = 0; i < n; i++)
+                {
+                    string s = pHANQUYENTableAdapter.GetDataPQ(Convert.ToInt32(item)).Rows[i][1].ToString().Trim();
+                    suli(s, Convert.ToBoolean(pHANQUYENTableAdapter.GetDataPQ(Convert.ToInt32(item)).Rows[i][2].ToString()));
+                }
+            }
+            // TODO: This line of code loads data into the 'dataDori.NGUOIDUNGNHOMNGUOIDUNG' table. You can move, or remove it, as needed.
+            this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter.Fill(this.dataDori.NGUOIDUNGNHOMNGUOIDUNG);
+            // TODO: This line of code loads data into the 'dataDori.PHANQUYEN' table. You can move, or remove it, as needed.
+            this.pHANQUYENTableAdapter.Fill(this.dataDori.PHANQUYEN);
+            // TODO: This line of code loads data into the 'dataDori.KHUVUC' table. You can move, or remove it, as needed.
+            this.kHUVUCTableAdapter.Fill(this.dataDori.KHUVUC);
+        }
+        private List<String> getma()
+        {
+            List<String> a = new List<string>();
+            for (int i = 0; i < nGUOIDUNGNHOMNGUOIDUNGTableAdapter.manguoidung(bientoancuc.tendn).Rows.Count; i++)
+            {
+                a.Add(nGUOIDUNGNHOMNGUOIDUNGTableAdapter.manguoidung(bientoancuc.tendn).Rows[i][0].ToString());
+            }
+            return a;
+        }
+        public void suli(string maMH, bool x)
+        {
+            if (x == false)
+            {
+                foreach (BaseItem item in ribbonControl1.Items)
+                {
+                    RibbonTabItem ribbonTab = item as RibbonTabItem;
+
+                    if (ribbonTab != null)
+                    {
+                        RibbonPanel panel = ribbonTab.Panel;
+
+                        foreach (Control panelControl in panel.Controls)
+                        {
+                            RibbonBar ribbonBar = panelControl as RibbonBar;
+
+                            if (ribbonBar != null && Convert.ToString(ribbonBar.Tag) == maMH)
+                            {
+                                foreach (BaseItem items in ribbonBar.Items)
+                                {
+                                    items.Enabled = false;
+                                }
+                                foreach (var itema in maMH)
+                                {
+
+                                }
+                                //foreach (BaseItem ribbonBarItem in ribbonBar.Items)
+                                //    ribbonBarItem.Enabled = false;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void ribbonTabItem_goimon_Click(object sender, EventArgs e)
@@ -186,9 +232,28 @@ namespace NhaHang
             }
             else
             {
-                Form_BanAn kh = new Form_BanAn();
+                Form_PhongAn kh = new Form_PhongAn();
                 additem(kh, "Hệ Thống Quản Lý Dịch Vụ Bàn");
             }
+        }
+        private void buttonItem_metro_Click_1(object sender, EventArgs e)
+        {
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Metro;
+        }
+
+        private void buttonItem_offic_Click_1(object sender, EventArgs e)
+        {
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
+        }
+
+        private void btn_window_Click_1(object sender, EventArgs e)
+        {
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007VistaGlass;
+        }
+
+        private void customColorBlender1_SelectedColorChanged(object sender, EventArgs e)
+        {
+            styleManager1.ManagerColorTint = customColorBlender1.SelectedColor;
         }
     }
 }

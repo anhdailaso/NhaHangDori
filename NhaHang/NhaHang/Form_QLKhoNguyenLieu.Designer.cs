@@ -142,56 +142,56 @@
             // maNLLabel
             // 
             maNLLabel.AutoSize = true;
-            maNLLabel.Location = new System.Drawing.Point(36, 44);
+            maNLLabel.Location = new System.Drawing.Point(11, 28);
             maNLLabel.Name = "maNLLabel";
-            maNLLabel.Size = new System.Drawing.Size(42, 13);
+            maNLLabel.Size = new System.Drawing.Size(91, 13);
             maNLLabel.TabIndex = 0;
-            maNLLabel.Text = "Ma NL:";
+            maNLLabel.Text = "Mã Nguyên Liệu :";
             // 
             // tenNLLabel
             // 
             tenNLLabel.AutoSize = true;
-            tenNLLabel.Location = new System.Drawing.Point(36, 70);
+            tenNLLabel.Location = new System.Drawing.Point(11, 54);
             tenNLLabel.Name = "tenNLLabel";
-            tenNLLabel.Size = new System.Drawing.Size(46, 13);
+            tenNLLabel.Size = new System.Drawing.Size(95, 13);
             tenNLLabel.TabIndex = 2;
-            tenNLLabel.Text = "Ten NL:";
+            tenNLLabel.Text = "Tên Nguyên Liệu :";
             // 
             // dVTLabel
             // 
             dVTLabel.AutoSize = true;
-            dVTLabel.Location = new System.Drawing.Point(36, 96);
+            dVTLabel.Location = new System.Drawing.Point(11, 80);
             dVTLabel.Name = "dVTLabel";
-            dVTLabel.Size = new System.Drawing.Size(32, 13);
+            dVTLabel.Size = new System.Drawing.Size(71, 13);
             dVTLabel.TabIndex = 4;
-            dVTLabel.Text = "DVT:";
+            dVTLabel.Text = "Đơn Vị Tính :";
             // 
             // maNCCLabel
             // 
             maNCCLabel.AutoSize = true;
-            maNCCLabel.Location = new System.Drawing.Point(36, 122);
+            maNCCLabel.Location = new System.Drawing.Point(11, 106);
             maNCCLabel.Name = "maNCCLabel";
-            maNCCLabel.Size = new System.Drawing.Size(50, 13);
+            maNCCLabel.Size = new System.Drawing.Size(83, 13);
             maNCCLabel.TabIndex = 6;
-            maNCCLabel.Text = "Ma NCC:";
+            maNCCLabel.Text = "Nhà Cung Cấp :";
             // 
             // hinhAnhLabel
             // 
             hinhAnhLabel.AutoSize = true;
-            hinhAnhLabel.Location = new System.Drawing.Point(245, 41);
+            hinhAnhLabel.Location = new System.Drawing.Point(268, 29);
             hinhAnhLabel.Name = "hinhAnhLabel";
-            hinhAnhLabel.Size = new System.Drawing.Size(54, 13);
+            hinhAnhLabel.Size = new System.Drawing.Size(57, 13);
             hinhAnhLabel.TabIndex = 8;
-            hinhAnhLabel.Text = "Hinh Anh:";
+            hinhAnhLabel.Text = "Hình Ảnh :";
             // 
             // kLTonLabel1
             // 
             kLTonLabel1.AutoSize = true;
-            kLTonLabel1.Location = new System.Drawing.Point(36, 157);
+            kLTonLabel1.Location = new System.Drawing.Point(11, 141);
             kLTonLabel1.Name = "kLTonLabel1";
-            kLTonLabel1.Size = new System.Drawing.Size(42, 13);
+            kLTonLabel1.Size = new System.Drawing.Size(83, 13);
             kLTonLabel1.TabIndex = 13;
-            kLTonLabel1.Text = "KLTon:";
+            kLTonLabel1.Text = "Khối Lượn Tồn :";
             // 
             // ngayLapLabel
             // 
@@ -409,7 +409,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(410, 507);
+            this.groupPanel1.Size = new System.Drawing.Size(410, 503);
             // 
             // 
             // 
@@ -467,7 +467,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(404, 485);
+            this.panel3.Size = new System.Drawing.Size(404, 481);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -477,7 +477,7 @@
             this.panel5.Controls.Add(this.btnHuy);
             this.panel5.Controls.Add(this.btn_Luu);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 240);
+            this.panel5.Location = new System.Drawing.Point(0, 236);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(404, 62);
             this.panel5.TabIndex = 59;
@@ -653,7 +653,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.cT_PHIEUNHAPDataGridViewX);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 302);
+            this.panel4.Location = new System.Drawing.Point(0, 298);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(404, 183);
             this.panel4.TabIndex = 29;
@@ -661,6 +661,7 @@
             // cT_PHIEUNHAPDataGridViewX
             // 
             this.cT_PHIEUNHAPDataGridViewX.AutoGenerateColumns = false;
+            this.cT_PHIEUNHAPDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.cT_PHIEUNHAPDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cT_PHIEUNHAPDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -686,24 +687,28 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "MaPN";
+            this.dataGridViewTextBoxColumn1.FillWeight = 101.2303F;
             this.dataGridViewTextBoxColumn1.HeaderText = "MaPN";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "MaNL";
+            this.dataGridViewTextBoxColumn2.FillWeight = 100.3602F;
             this.dataGridViewTextBoxColumn2.HeaderText = "MaNL";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "SoLuong";
+            this.dataGridViewTextBoxColumn3.FillWeight = 98.68955F;
             this.dataGridViewTextBoxColumn3.HeaderText = "SoLuong";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "DonGiaNhap";
+            this.dataGridViewTextBoxColumn4.FillWeight = 99.71989F;
             this.dataGridViewTextBoxColumn4.HeaderText = "DonGiaNhap";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
@@ -713,7 +718,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(404, 485);
+            this.panel2.Size = new System.Drawing.Size(404, 481);
             this.panel2.TabIndex = 0;
             // 
             // groupPanel4
@@ -724,7 +729,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel4.Location = new System.Drawing.Point(415, 312);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(475, 196);
+            this.groupPanel4.Size = new System.Drawing.Size(475, 192);
             // 
             // 
             // 
@@ -774,7 +779,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 175);
+            this.panel1.Size = new System.Drawing.Size(469, 171);
             this.panel1.TabIndex = 0;
             // 
             // kLTonTextBoxX
@@ -785,7 +790,7 @@
             this.kLTonTextBoxX.Border.Class = "TextBoxBorder";
             this.kLTonTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.kLTonTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "KLTon", true));
-            this.kLTonTextBoxX.Location = new System.Drawing.Point(96, 150);
+            this.kLTonTextBoxX.Location = new System.Drawing.Point(124, 135);
             this.kLTonTextBoxX.Name = "kLTonTextBoxX";
             this.kLTonTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.kLTonTextBoxX.TabIndex = 14;
@@ -798,7 +803,7 @@
             this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBoxEx1.FormattingEnabled = true;
             this.comboBoxEx1.ItemHeight = 14;
-            this.comboBoxEx1.Location = new System.Drawing.Point(96, 124);
+            this.comboBoxEx1.Location = new System.Drawing.Point(124, 109);
             this.comboBoxEx1.Name = "comboBoxEx1";
             this.comboBoxEx1.Size = new System.Drawing.Size(121, 20);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -813,7 +818,7 @@
             this.maNLTextBoxX.Border.Class = "TextBoxBorder";
             this.maNLTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.maNLTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "MaNL", true));
-            this.maNLTextBoxX.Location = new System.Drawing.Point(96, 41);
+            this.maNLTextBoxX.Location = new System.Drawing.Point(124, 26);
             this.maNLTextBoxX.Name = "maNLTextBoxX";
             this.maNLTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.maNLTextBoxX.TabIndex = 1;
@@ -826,7 +831,7 @@
             this.tenNLTextBoxX.Border.Class = "TextBoxBorder";
             this.tenNLTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tenNLTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "TenNL", true));
-            this.tenNLTextBoxX.Location = new System.Drawing.Point(96, 67);
+            this.tenNLTextBoxX.Location = new System.Drawing.Point(124, 52);
             this.tenNLTextBoxX.Name = "tenNLTextBoxX";
             this.tenNLTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.tenNLTextBoxX.TabIndex = 3;
@@ -839,7 +844,7 @@
             this.dVTTextBoxX.Border.Class = "TextBoxBorder";
             this.dVTTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dVTTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "DVT", true));
-            this.dVTTextBoxX.Location = new System.Drawing.Point(96, 93);
+            this.dVTTextBoxX.Location = new System.Drawing.Point(124, 78);
             this.dVTTextBoxX.Name = "dVTTextBoxX";
             this.dVTTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.dVTTextBoxX.TabIndex = 5;
@@ -847,7 +852,7 @@
             // hinhAnhPictureBox
             // 
             this.hinhAnhPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.nGUYENLIEUBindingSource, "HinhAnh", true));
-            this.hinhAnhPictureBox.Location = new System.Drawing.Point(305, 41);
+            this.hinhAnhPictureBox.Location = new System.Drawing.Point(331, 26);
             this.hinhAnhPictureBox.Name = "hinhAnhPictureBox";
             this.hinhAnhPictureBox.Size = new System.Drawing.Size(121, 129);
             this.hinhAnhPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -862,7 +867,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupPanel3.Location = new System.Drawing.Point(890, 312);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(491, 196);
+            this.groupPanel3.Size = new System.Drawing.Size(491, 192);
             // 
             // 
             // 
@@ -896,6 +901,7 @@
             // 
             // nguyenLieu2DataGridViewX
             // 
+            this.nguyenLieu2DataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -926,7 +932,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.nguyenLieu2DataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.nguyenLieu2DataGridViewX.Size = new System.Drawing.Size(485, 175);
+            this.nguyenLieu2DataGridViewX.Size = new System.Drawing.Size(485, 171);
             this.nguyenLieu2DataGridViewX.TabIndex = 1;
             // 
             // superTabItem1
@@ -996,7 +1002,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1386, 510);
+            this.ClientSize = new System.Drawing.Size(1386, 506);
             this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel2);

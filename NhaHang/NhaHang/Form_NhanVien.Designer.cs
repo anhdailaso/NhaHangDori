@@ -90,47 +90,47 @@
             // maNVLabel
             // 
             maNVLabel.AutoSize = true;
-            maNVLabel.Location = new System.Drawing.Point(106, 22);
+            maNVLabel.Location = new System.Drawing.Point(37, 22);
             maNVLabel.Name = "maNVLabel";
-            maNVLabel.Size = new System.Drawing.Size(43, 13);
+            maNVLabel.Size = new System.Drawing.Size(81, 13);
             maNVLabel.TabIndex = 0;
-            maNVLabel.Text = "Ma NV:";
+            maNVLabel.Text = "Mã Nhân Viên :";
             // 
             // tenNVLabel
             // 
             tenNVLabel.AutoSize = true;
-            tenNVLabel.Location = new System.Drawing.Point(106, 48);
+            tenNVLabel.Location = new System.Drawing.Point(37, 48);
             tenNVLabel.Name = "tenNVLabel";
-            tenNVLabel.Size = new System.Drawing.Size(47, 13);
+            tenNVLabel.Size = new System.Drawing.Size(85, 13);
             tenNVLabel.TabIndex = 2;
-            tenNVLabel.Text = "Ten NV:";
+            tenNVLabel.Text = "Tên Nhân Viên :";
             // 
             // diaChiLabel
             // 
             diaChiLabel.AutoSize = true;
-            diaChiLabel.Location = new System.Drawing.Point(106, 74);
+            diaChiLabel.Location = new System.Drawing.Point(37, 74);
             diaChiLabel.Name = "diaChiLabel";
-            diaChiLabel.Size = new System.Drawing.Size(44, 13);
+            diaChiLabel.Size = new System.Drawing.Size(47, 13);
             diaChiLabel.TabIndex = 4;
-            diaChiLabel.Text = "Dia Chi:";
+            diaChiLabel.Text = "Địa Chỉ :";
             // 
             // sDTLabel
             // 
             sDTLabel.AutoSize = true;
-            sDTLabel.Location = new System.Drawing.Point(106, 100);
+            sDTLabel.Location = new System.Drawing.Point(37, 100);
             sDTLabel.Name = "sDTLabel";
-            sDTLabel.Size = new System.Drawing.Size(32, 13);
+            sDTLabel.Size = new System.Drawing.Size(81, 13);
             sDTLabel.TabIndex = 6;
-            sDTLabel.Text = "SDT:";
+            sDTLabel.Text = "Số Điện Thoại :";
             // 
             // tenDangNhapLabel
             // 
             tenDangNhapLabel.AutoSize = true;
-            tenDangNhapLabel.Location = new System.Drawing.Point(106, 126);
+            tenDangNhapLabel.Location = new System.Drawing.Point(37, 126);
             tenDangNhapLabel.Name = "tenDangNhapLabel";
-            tenDangNhapLabel.Size = new System.Drawing.Size(87, 13);
+            tenDangNhapLabel.Size = new System.Drawing.Size(90, 13);
             tenDangNhapLabel.TabIndex = 10;
-            tenDangNhapLabel.Text = "Ten Dang Nhap:";
+            tenDangNhapLabel.Text = "Tên Đăng Nhập :";
             // 
             // panel2
             // 
@@ -164,9 +164,9 @@
             this.panel3.Controls.Add(this.btnHuy);
             this.panel3.Controls.Add(this.btn_Luu);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(529, 60);
+            this.panel3.Location = new System.Drawing.Point(424, 60);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(767, 77);
+            this.panel3.Size = new System.Drawing.Size(872, 77);
             this.panel3.TabIndex = 31;
             // 
             // btnThem
@@ -177,7 +177,7 @@
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageTextSpacing = 1;
             this.btnThem.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnThem.Location = new System.Drawing.Point(114, 6);
+            this.btnThem.Location = new System.Drawing.Point(184, 19);
             this.btnThem.Name = "btnThem";
             this.btnThem.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnThem.Size = new System.Drawing.Size(99, 50);
@@ -195,7 +195,7 @@
             this.btn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoa.Image")));
             this.btn_xoa.ImageTextSpacing = 1;
             this.btn_xoa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_xoa.Location = new System.Drawing.Point(219, 6);
+            this.btn_xoa.Location = new System.Drawing.Point(289, 19);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btn_xoa.Size = new System.Drawing.Size(99, 50);
@@ -214,7 +214,7 @@
             this.btnSua.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnSua.ImageTextSpacing = 1;
             this.btnSua.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSua.Location = new System.Drawing.Point(324, 6);
+            this.btnSua.Location = new System.Drawing.Point(394, 19);
             this.btnSua.Name = "btnSua";
             this.btnSua.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnSua.Size = new System.Drawing.Size(99, 50);
@@ -233,7 +233,7 @@
             this.btnHuy.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnHuy.ImageTextSpacing = 1;
             this.btnHuy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnHuy.Location = new System.Drawing.Point(534, 6);
+            this.btnHuy.Location = new System.Drawing.Point(604, 19);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnHuy.Size = new System.Drawing.Size(99, 50);
@@ -251,7 +251,7 @@
             this.btn_Luu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Luu.Image")));
             this.btn_Luu.ImageTextSpacing = 1;
             this.btn_Luu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Luu.Location = new System.Drawing.Point(429, 6);
+            this.btn_Luu.Location = new System.Drawing.Point(499, 19);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btn_Luu.Size = new System.Drawing.Size(99, 50);
@@ -268,7 +268,7 @@
             this.pan_thongtin.Dock = System.Windows.Forms.DockStyle.Left;
             this.pan_thongtin.Location = new System.Drawing.Point(5, 60);
             this.pan_thongtin.Name = "pan_thongtin";
-            this.pan_thongtin.Size = new System.Drawing.Size(524, 511);
+            this.pan_thongtin.Size = new System.Drawing.Size(419, 509);
             this.pan_thongtin.TabIndex = 30;
             // 
             // panel_tt
@@ -288,7 +288,7 @@
             this.panel_tt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_tt.Location = new System.Drawing.Point(0, 297);
             this.panel_tt.Name = "panel_tt";
-            this.panel_tt.Size = new System.Drawing.Size(524, 214);
+            this.panel_tt.Size = new System.Drawing.Size(419, 212);
             this.panel_tt.TabIndex = 30;
             // 
             // maNVTextBox
@@ -349,7 +349,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(524, 297);
+            this.panel4.Size = new System.Drawing.Size(419, 297);
             this.panel4.TabIndex = 29;
             // 
             // btnChonHinh
@@ -361,7 +361,7 @@
             this.btnChonHinh.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnChonHinh.ImageTextSpacing = 1;
             this.btnChonHinh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnChonHinh.Location = new System.Drawing.Point(199, 242);
+            this.btnChonHinh.Location = new System.Drawing.Point(125, 241);
             this.btnChonHinh.Name = "btnChonHinh";
             this.btnChonHinh.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnChonHinh.Size = new System.Drawing.Size(121, 42);
@@ -374,9 +374,9 @@
             // hinhAnhPictureBox
             // 
             this.hinhAnhPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.nHANVIENBindingSource, "HinhAnh", true));
-            this.hinhAnhPictureBox.Location = new System.Drawing.Point(118, 25);
+            this.hinhAnhPictureBox.Location = new System.Drawing.Point(66, 4);
             this.hinhAnhPictureBox.Name = "hinhAnhPictureBox";
-            this.hinhAnhPictureBox.Size = new System.Drawing.Size(272, 194);
+            this.hinhAnhPictureBox.Size = new System.Drawing.Size(274, 226);
             this.hinhAnhPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.hinhAnhPictureBox.TabIndex = 9;
             this.hinhAnhPictureBox.TabStop = false;
@@ -386,14 +386,15 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.nHANVIENDataGridViewX);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(529, 137);
+            this.panel1.Location = new System.Drawing.Point(424, 137);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 434);
+            this.panel1.Size = new System.Drawing.Size(872, 432);
             this.panel1.TabIndex = 32;
             // 
             // nHANVIENDataGridViewX
             // 
             this.nHANVIENDataGridViewX.AutoGenerateColumns = false;
+            this.nHANVIENDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.nHANVIENDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.nHANVIENDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -415,7 +416,7 @@
             this.nHANVIENDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.nHANVIENDataGridViewX.Location = new System.Drawing.Point(0, 0);
             this.nHANVIENDataGridViewX.Name = "nHANVIENDataGridViewX";
-            this.nHANVIENDataGridViewX.Size = new System.Drawing.Size(763, 430);
+            this.nHANVIENDataGridViewX.Size = new System.Drawing.Size(868, 428);
             this.nHANVIENDataGridViewX.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -472,6 +473,8 @@
             this.tableAdapterManager.DICHVUTableAdapter = null;
             this.tableAdapterManager.HOADONTableAdapter = null;
             this.tableAdapterManager.KHACHHANGTableAdapter = null;
+            this.tableAdapterManager.KHUVUCBANTableAdapter = null;
+            this.tableAdapterManager.KHUVUCPHONGTableAdapter = null;
             this.tableAdapterManager.KHUVUCTableAdapter = null;
             this.tableAdapterManager.LOAIKHTableAdapter = null;
             this.tableAdapterManager.LOAIPHONGTableAdapter = null;
@@ -509,7 +512,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1301, 573);
+            this.ClientSize = new System.Drawing.Size(1301, 571);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pan_thongtin);

@@ -36,6 +36,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -62,7 +63,6 @@
             this.labelX1.TabIndex = 1;
             this.labelX1.Text = "labelX1";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
-
             // 
             // ShowBan
             // 

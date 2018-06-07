@@ -19,14 +19,13 @@ namespace NhaHang
             InitializeComponent();
         }
         public event EventHandler PicherClick = null;
-        public void loadmonnguyenlieu(Byte[] anh, String ten, int soluong,string ma)
+        public void loadmonnguyenlieu(Byte[] anh, String ten,string dvt, double soluong,string ma)
         {
             this.Tag = ma;
             var stream = new MemoryStream(anh);
             pictureBox1.Image = Image.FromStream(stream);
             labelX1.Text = ten;
-            numericUpDown1.Maximum = soluong;
-            numericUpDown1.Value = soluong;
+            labelX2.Text = soluong.ToString() + " /" + dvt;
             //this.Tag = ma;
         }
 

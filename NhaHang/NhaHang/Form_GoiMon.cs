@@ -123,9 +123,10 @@ namespace NhaHang
                 flowLayoutPanel2.Controls.Clear();
             }
         }
+        //đổi 2 thành 1
         public void ressetban()
         {
-            foreach (ShowMon item in flowLayoutPanel2.Controls) item.Dispose();
+            foreach (ShowBan item in flowLayoutPanel1.Controls) item.Dispose();
             {
                 flowLayoutPanel1.Controls.Clear();
             }
@@ -205,12 +206,12 @@ namespace NhaHang
             //thêm phiếu đặt
             try
             {
-                pHIEUDATMONTableAdapter.Insert(dateTimePicker1.Value, gioDatDateTimePicker.Value.TimeOfDay, 0, Convert.ToDouble(tienCocTextBoxX.Text), Convert.ToInt32(comboBoxEx1.SelectedValue), DateTime.Now, "Còn");
+                pHIEUDATMONTableAdapter.Insert(dateTimePicker1.Value, gioDatDateTimePicker.Value.TimeOfDay, 0,0.0, Convert.ToInt32(comboBoxEx1.SelectedValue), DateTime.Now, "Còn");
                 this.tableAdapterManager.UpdateAll(this.dataDori);
             }
             catch (Exception)
             {
-                throw;
+                MessageBox.Show("đặt bàn không thành công");
             }
             this.pHIEUDATMONTableAdapter.Fill(this.dataDori.PHIEUDATMON);
             var mapd = dataDori.PHIEUDATMON.Max(p => p.MaPD);
@@ -394,12 +395,15 @@ namespace NhaHang
         //gộp bàn
         private void gộpBànToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form_GopBan frm = new Form_GopBan();
+            frm.ShowDialog();
         }
         //reload
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            //load bàn
+            ressetban();
+            loadbanan();
         }
     }
 }

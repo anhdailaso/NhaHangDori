@@ -44,14 +44,12 @@ namespace NhaHang
         private void ckb_ghinho_CheckedChanged(object sender, EventArgs e)
         {
 
-
         }
         //login 
         private void btn_login_Click(object sender, EventArgs e)
         {
             Form_Main main = new Form_Main();
             BUS_QL_NguoiDung.Instance.login(ckb_ghinho, txt_id, txt_password,this,main);
-
         }
     }
 }

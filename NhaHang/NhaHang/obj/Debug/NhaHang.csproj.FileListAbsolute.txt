@@ -33,30 +33,11 @@ C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\NhaHang\obj\Debug\NhaH
 C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\NhaHang\obj\Debug\NhaHang.exe
 C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\NhaHang\obj\Debug\NhaHang.pdb
 C:\Users\truon\Desktop\Quản Lý Nhà Hàng Dori\NhaHang\NhaHang\obj\Debug\NhaHang.Form_PhanQuyen.resources
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\NhaHang.exe.config
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\NhaHang.exe
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\NhaHang.pdb
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\BUSDLL.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\Telerik.WinControls.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\Telerik.WinControls.GridView.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\Telerik.WinControls.UI.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\TelerikCommon.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\EntityFramework.dll
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\BUSDLL.pdb
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DevComponents.DotNetBar2.xml
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\Telerik.WinControls.xml
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\Telerik.WinControls.GridView.xml
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\Telerik.WinControls.UI.xml
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.pdb
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.dll.config
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\EntityFramework.xml
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.csprojResolveAssemblyReference.cache
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.CTBan.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.CTPhong.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.FormKhachHang.resources
-C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_BanAn.resources
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_PhongAn.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_ChuyenBan.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_Connnect.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_GoiMon.resources
@@ -71,11 +52,25 @@ C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_QLKhoNguyenLi
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_ResetPass.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.NguyenLieu.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Properties.Resources.resources
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.ShowPhong.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.ShowBan.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.ShowMon.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.ShowNguyenLieu.resources
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.csproj.GenerateResource.Cache
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.exe.licenses
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.csproj.CoreCompileInputs.cache
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\NhaHang.exe.config
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\NhaHang.exe
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\NhaHang.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\BUSDLL.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\EntityFramework.dll
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\BUSDLL.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\DAODLL.dll.config
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\bin\Debug\EntityFramework.xml
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.exe
 C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.pdb
+C:\Users\truon\Desktop\DoRi\NhaHang\NhaHang\obj\Debug\NhaHang.Form_GopBan.resources

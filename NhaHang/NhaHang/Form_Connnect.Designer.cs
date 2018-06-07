@@ -62,7 +62,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Swis721 Hv BT", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(271, 301);
+            this.groupPanel1.Size = new System.Drawing.Size(271, 300);
             // 
             // 
             // 
@@ -263,8 +263,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 304);
+            this.ClientSize = new System.Drawing.Size(281, 303);
             this.Controls.Add(this.groupPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Connnect";
             this.Text = "Form_Connnect";
             this.groupPanel1.ResumeLayout(false);

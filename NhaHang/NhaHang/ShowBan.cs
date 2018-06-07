@@ -41,15 +41,14 @@ namespace NhaHang
 
         private void ShowBan_Load(object sender, EventArgs e)
         {
-            
             pictureBox1.Size = new Size(89,89);
             this.Size = new Size(91, 118);
-
         }
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             bientoancuc.mabantheokhu = this.Tag.ToString();
             if (ButtonClick != null) ButtonClick(sender, e);
+            this.BackColor = pictureBox1.BackColor;
         }
     }
 }

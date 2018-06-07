@@ -33,36 +33,36 @@
             this.Groud_ND = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.cbb_TenNhom = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataDori = new NhaHang.DataDori();
             this.txt_NhomNguongDung = new DevComponents.DotNetBar.LabelX();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Thêm = new DevComponents.DotNetBar.ButtonX();
             this.btn_Xoa = new DevComponents.DotNetBar.ButtonX();
             this.btn_update = new DevComponents.DotNetBar.ButtonX();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataDori = new NhaHang.DataDori();
-            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nGUOIDUNGTableAdapter = new NhaHang.DataDoriTableAdapters.NGUOIDUNGTableAdapter();
             this.tableAdapterManager = new NhaHang.DataDoriTableAdapters.TableAdapterManager();
             this.nGUOIDUNGNHOMNGUOIDUNGTableAdapter = new NhaHang.DataDoriTableAdapters.NGUOIDUNGNHOMNGUOIDUNGTableAdapter();
             this.nHOMNGUOIDUNGTableAdapter = new NhaHang.DataDoriTableAdapters.NHOMNGUOIDUNGTableAdapter();
             this.Groud_ND.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
             this.panelEx1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.Groud_ND.Dock = System.Windows.Forms.DockStyle.Left;
             this.Groud_ND.Location = new System.Drawing.Point(5, 79);
             this.Groud_ND.Name = "Groud_ND";
-            this.Groud_ND.Size = new System.Drawing.Size(585, 422);
+            this.Groud_ND.Size = new System.Drawing.Size(585, 419);
             // 
             // 
             // 
@@ -112,7 +112,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(579, 401);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(579, 398);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // cbb_TenNhom
@@ -130,6 +130,16 @@
             this.cbb_TenNhom.TabIndex = 2;
             this.cbb_TenNhom.ValueMember = "MaNhomNguoiDung";
             this.cbb_TenNhom.SelectedIndexChanged += new System.EventHandler(this.cbb_TenNhom_SelectedIndexChanged);
+            // 
+            // nHOMNGUOIDUNGBindingSource
+            // 
+            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
+            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataDori;
+            // 
+            // dataDori
+            // 
+            this.dataDori.DataSetName = "DataDori";
+            this.dataDori.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txt_NhomNguongDung
             // 
@@ -183,12 +193,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(590, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 422);
+            this.panel1.Size = new System.Drawing.Size(661, 419);
             this.panel1.TabIndex = 14;
             // 
             // nGUOIDUNGNHOMNGUOIDUNGDataGridViewX
             // 
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.AutoGenerateColumns = false;
+            this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -207,9 +218,32 @@
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.Location = new System.Drawing.Point(143, 64);
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.Name = "nGUOIDUNGNHOMNGUOIDUNGDataGridViewX";
-            this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.Size = new System.Drawing.Size(518, 358);
+            this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.Size = new System.Drawing.Size(518, 355);
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.TabIndex = 15;
             this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaNhomNguoiDung";
+            this.dataGridViewTextBoxColumn1.HeaderText = "MaNhomNguoiDung";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenDangNhap";
+            this.dataGridViewTextBoxColumn2.HeaderText = "TenDangNhap";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "GhiChu";
+            this.dataGridViewTextBoxColumn3.HeaderText = "GhiChu";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // nGUOIDUNGNHOMNGUOIDUNGBindingSource
+            // 
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataMember = "NGUOIDUNGNHOMNGUOIDUNG";
+            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataSource = this.dataDori;
             // 
             // panel3
             // 
@@ -220,7 +254,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 64);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(143, 358);
+            this.panel3.Size = new System.Drawing.Size(143, 355);
             this.panel3.TabIndex = 15;
             // 
             // btn_Thêm
@@ -279,39 +313,6 @@
             this.panel2.Size = new System.Drawing.Size(661, 64);
             this.panel2.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaNhomNguoiDung";
-            this.dataGridViewTextBoxColumn1.HeaderText = "MaNhomNguoiDung";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenDangNhap";
-            this.dataGridViewTextBoxColumn2.HeaderText = "TenDangNhap";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "GhiChu";
-            this.dataGridViewTextBoxColumn3.HeaderText = "GhiChu";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // nGUOIDUNGNHOMNGUOIDUNGBindingSource
-            // 
-            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataMember = "NGUOIDUNGNHOMNGUOIDUNG";
-            this.nGUOIDUNGNHOMNGUOIDUNGBindingSource.DataSource = this.dataDori;
-            // 
-            // dataDori
-            // 
-            this.dataDori.DataSetName = "DataDori";
-            this.dataDori.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nHOMNGUOIDUNGBindingSource
-            // 
-            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
-            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataDori;
-            // 
             // nGUOIDUNGBindingSource
             // 
             this.nGUOIDUNGBindingSource.DataMember = "NGUOIDUNG";
@@ -333,6 +334,9 @@
             this.tableAdapterManager.CT_PHIEUNHAPTableAdapter = null;
             this.tableAdapterManager.DICHVUTableAdapter = null;
             this.tableAdapterManager.HOADONTableAdapter = null;
+            this.tableAdapterManager.KHACHHANGTableAdapter = null;
+            this.tableAdapterManager.KHUVUCBANTableAdapter = null;
+            this.tableAdapterManager.KHUVUCPHONGTableAdapter = null;
             this.tableAdapterManager.KHUVUCTableAdapter = null;
             this.tableAdapterManager.LOAIKHTableAdapter = null;
             this.tableAdapterManager.LOAIPHONGTableAdapter = null;
@@ -366,7 +370,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1256, 502);
+            this.ClientSize = new System.Drawing.Size(1256, 500);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Groud_ND);
             this.Controls.Add(this.panelEx1);
@@ -375,14 +379,14 @@
             this.Text = "Form_NhomND";
             this.Load += new System.EventHandler(this.Form_NhomND_Load);
             this.Groud_ND.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
             this.panelEx1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGDataGridViewX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGNHOMNGUOIDUNGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGBindingSource)).EndInit();
             this.ResumeLayout(false);
 

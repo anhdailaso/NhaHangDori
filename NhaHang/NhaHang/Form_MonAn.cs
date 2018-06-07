@@ -47,8 +47,8 @@ namespace NhaHang
             foreach (var item in nl)
             {
                 ShowNguyenLieu snl = new ShowNguyenLieu();
-                int sl = item.KLTon.ToString() == "" ? 0 : (int)(item.KLTon);
-                snl.loadmonnguyenlieu((Byte[])item.HinhAnh, item.TenNL.ToString(),12,item.MaNL.ToString());
+                double sl = Math.Round(item.KLTon, 2);
+                snl.loadmonnguyenlieu((Byte[])item.HinhAnh, item.TenNL.ToString(), item.DVT, sl, item.MaNL.ToString());
                 snl.PicherClick += snl_PicherClick;
                 flowLayoutPanel1.Controls.Add(snl);
             }

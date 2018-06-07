@@ -56,6 +56,7 @@
             this.dataDori = new NhaHang.DataDori();
             this.panel_tt = new System.Windows.Forms.Panel();
             this.comboBoxEx2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.kHUVUCPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.maPHTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -71,7 +72,6 @@
             this.pHONGTableAdapter = new NhaHang.DataDoriTableAdapters.PHONGTableAdapter();
             this.tableAdapterManager = new NhaHang.DataDoriTableAdapters.TableAdapterManager();
             this.lOAIPHONGTableAdapter = new NhaHang.DataDoriTableAdapters.LOAIPHONGTableAdapter();
-            this.kHUVUCPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kHUVUCPHONGTableAdapter = new NhaHang.DataDoriTableAdapters.KHUVUCPHONGTableAdapter();
             maPHLabel = new System.Windows.Forms.Label();
             tenPHLabel = new System.Windows.Forms.Label();
@@ -86,9 +86,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pHONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
             this.panel_tt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kHUVUCPHONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).BeginInit();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kHUVUCPHONGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // maPHLabel
@@ -196,7 +196,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(633, 311);
+            this.panel2.Size = new System.Drawing.Size(633, 309);
             this.panel2.TabIndex = 2;
             // 
             // panel6
@@ -206,7 +206,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 128);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(629, 179);
+            this.panel6.Size = new System.Drawing.Size(629, 177);
             this.panel6.TabIndex = 3;
             // 
             // pHONGDataGridViewX
@@ -251,7 +251,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.pHONGDataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.pHONGDataGridViewX.Size = new System.Drawing.Size(629, 179);
+            this.pHONGDataGridViewX.Size = new System.Drawing.Size(629, 177);
             this.pHONGDataGridViewX.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -344,6 +344,11 @@
             this.comboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx2.TabIndex = 15;
             this.comboBoxEx2.ValueMember = "MaKV";
+            // 
+            // kHUVUCPHONGBindingSource
+            // 
+            this.kHUVUCPHONGBindingSource.DataMember = "KHUVUCPHONG";
+            this.kHUVUCPHONGBindingSource.DataSource = this.dataDori;
             // 
             // comboBoxEx1
             // 
@@ -566,11 +571,6 @@
             // 
             this.lOAIPHONGTableAdapter.ClearBeforeFill = true;
             // 
-            // kHUVUCPHONGBindingSource
-            // 
-            this.kHUVUCPHONGBindingSource.DataMember = "KHUVUCPHONG";
-            this.kHUVUCPHONGBindingSource.DataSource = this.dataDori;
-            // 
             // kHUVUCPHONGTableAdapter
             // 
             this.kHUVUCPHONGTableAdapter.ClearBeforeFill = true;
@@ -580,7 +580,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(643, 371);
+            this.ClientSize = new System.Drawing.Size(643, 369);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "CTPhong";
@@ -595,9 +595,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
             this.panel_tt.ResumeLayout(false);
             this.panel_tt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kHUVUCPHONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kHUVUCPHONGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
