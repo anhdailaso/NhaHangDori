@@ -60,6 +60,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.reflectionLabel1);
@@ -72,7 +73,7 @@
             // btn_thoat
             // 
             this.btn_thoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.btn_thoat.BackColor = System.Drawing.Color.NavajoWhite;
             this.btn_thoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_thoat.BackgroundImage")));
             this.btn_thoat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -80,7 +81,7 @@
             this.btn_thoat.ImageFixedSize = new System.Drawing.Size(23, 23);
             this.btn_thoat.Location = new System.Drawing.Point(573, 10);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
             this.btn_thoat.Size = new System.Drawing.Size(80, 34);
             this.btn_thoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_thoat.TabIndex = 14;
@@ -98,7 +99,7 @@
             this.reflectionLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.reflectionLabel1.Size = new System.Drawing.Size(169, 53);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Chuyển</i><font color=\"#B02B2C\">Bàn</font></font></b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Chuyển Bàn</i></font></b>";
             // 
             // panel2
             // 
@@ -109,7 +110,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(667, 275);
+            this.panel2.Size = new System.Drawing.Size(667, 271);
             this.panel2.TabIndex = 4;
             // 
             // panel6
@@ -121,7 +122,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(385, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(278, 271);
+            this.panel6.Size = new System.Drawing.Size(278, 267);
             this.panel6.TabIndex = 2;
             // 
             // labelX4
@@ -135,7 +136,7 @@
             this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.labelX4.Location = new System.Drawing.Point(164, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(110, 19);
+            this.labelX4.Size = new System.Drawing.Size(110, 15);
             this.labelX4.TabIndex = 2;
             this.labelX4.Text = "labelX4";
             this.labelX4.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -150,27 +151,29 @@
             this.labelX2.ForeColor = System.Drawing.Color.Red;
             this.labelX2.Location = new System.Drawing.Point(0, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(139, 19);
+            this.labelX2.Size = new System.Drawing.Size(139, 15);
             this.labelX2.TabIndex = 1;
             this.labelX2.Text = "<b>  Chọn Bàn Chuyển Đến :</b><font color=\"#000000\"></font>";
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.NavajoWhite;
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 19);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 15);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(274, 248);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.buttonX2);
             this.panel5.Controls.Add(this.buttonX1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(284, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(101, 271);
+            this.panel5.Size = new System.Drawing.Size(101, 267);
             this.panel5.TabIndex = 1;
             // 
             // buttonX2
@@ -208,7 +211,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(284, 271);
+            this.panel4.Size = new System.Drawing.Size(284, 267);
             this.panel4.TabIndex = 0;
             // 
             // labelX3
@@ -222,7 +225,7 @@
             this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.labelX3.Location = new System.Drawing.Point(170, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(110, 19);
+            this.labelX3.Size = new System.Drawing.Size(110, 15);
             this.labelX3.TabIndex = 1;
             this.labelX3.Text = "labelX3";
             this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -236,15 +239,16 @@
             this.labelX1.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelX1.Location = new System.Drawing.Point(0, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(141, 19);
+            this.labelX1.Size = new System.Drawing.Size(141, 15);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "<b>  Chọn Bàn Cần Chuyển :</b>";
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 19);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 15);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(280, 248);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -302,7 +306,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 340);
+            this.ClientSize = new System.Drawing.Size(677, 336);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

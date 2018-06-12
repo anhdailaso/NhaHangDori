@@ -69,30 +69,30 @@ namespace NhaHang
         private void btn_nhanvien_Click(object sender, EventArgs e)
         {
             Form_NhanVien kh = new Form_NhanVien();
-            additem(kh, "Quản Lý Khách Hàng");
+            additem(kh, "Quản Lý Nhân Viên");
         }
 
         private void btn_khuvuc_Click(object sender, EventArgs e)
         {
             Form_QLBan kh = new Form_QLBan();
-            additem(kh, "Quản Lý Khách Hàng");
+            additem(kh, "Quản Lý Khu Vực");
         }
 
         private void btn_nguyen_l_Click(object sender, EventArgs e)
         {
             Form_QLKhoNguyenLieu kh = new Form_QLKhoNguyenLieu();
-            additem(kh, "Quản Lý Khách Hàng");
+            additem(kh, "Quản Lý Nguyên Liệu");
         }
 
         private void btn_addND_Click(object sender, EventArgs e)
         {
             Form_NhomND kh = new Form_NhomND();
-            additem(kh, "Quản Lý Khách Hàng");
+            additem(kh, "Quản Lý Thêm Người Dùng");
         }
         private void btn_phanquyen_Click(object sender, EventArgs e)
         {
             Form_PhanQuyen kh = new Form_PhanQuyen();
-            additem(kh, "Quản Lý Khách Hàng");
+            additem(kh, "Phân Quyền Hệ Thống");
         }
         //sự kiện đóng tab
         private void tabControl1_TabItemClose_1(object sender, TabStripActionEventArgs e)
@@ -233,7 +233,7 @@ namespace NhaHang
             else
             {
                 Form_PhongAn kh = new Form_PhongAn();
-                additem(kh, "Hệ Thống Quản Lý Dịch Vụ Bàn");
+                additem(kh, "Hệ Thống Quản Lý Phòng");
             }
         }
         private void buttonItem_metro_Click_1(object sender, EventArgs e)
@@ -254,6 +254,24 @@ namespace NhaHang
         private void customColorBlender1_SelectedColorChanged(object sender, EventArgs e)
         {
             styleManager1.ManagerColorTint = customColorBlender1.SelectedColor;
+        }
+
+        private void btn_hoadon_Click(object sender, EventArgs e)
+        {
+            Form_ThongKe kh = new Form_ThongKe();
+            additem(kh, "Thống Kê Hóa Đơn Phiếu Nhập");
+        }
+
+        private void btn_addND_Click_1(object sender, EventArgs e)
+        {
+            Form_NhomND kh = new Form_NhomND();
+            additem(kh, "Thêm Người Dùng vào Nhóm Người Dùng");
+        }
+
+        private void btn_tonkho_Click(object sender, EventArgs e)
+        {
+            Form_TonKho kh = new Form_TonKho();
+            additem(kh, "Thêm Thống Kê Tồn Kho");
         }
     }
 }

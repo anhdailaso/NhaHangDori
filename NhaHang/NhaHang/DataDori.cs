@@ -4,6 +4,9 @@
 
     partial class DataDori
     {
+        partial class NHOMNGUOIDUNGDataTable
+        {
+        }
     }
 }
 

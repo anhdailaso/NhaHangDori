@@ -62,7 +62,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Swis721 Hv BT", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(271, 300);
+            this.groupPanel1.Size = new System.Drawing.Size(271, 298);
             // 
             // 
             // 
@@ -106,6 +106,7 @@
             this.cbb_data.Size = new System.Drawing.Size(147, 28);
             this.cbb_data.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbb_data.TabIndex = 12;
+            this.cbb_data.DropDown += new System.EventHandler(this.cbb_data_DropDown);
             // 
             // cbb_server
             // 
@@ -120,6 +121,7 @@
             this.cbb_server.Size = new System.Drawing.Size(147, 28);
             this.cbb_server.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbb_server.TabIndex = 11;
+            this.cbb_server.DropDown += new System.EventHandler(this.cbb_server_DropDown);
             // 
             // btn_exit
             // 
@@ -263,10 +265,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 303);
+            this.ClientSize = new System.Drawing.Size(281, 301);
             this.Controls.Add(this.groupPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Connnect";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Connnect";
             this.groupPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

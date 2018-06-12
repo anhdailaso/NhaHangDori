@@ -152,8 +152,7 @@
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.Size = new System.Drawing.Size(246, 50);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý</i><font color=\"#B02B2C\"> Nhân Viên</font></font></" +
-    "b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý Nhân Viên</i></font></b>";
             // 
             // panel3
             // 
@@ -268,7 +267,7 @@
             this.pan_thongtin.Dock = System.Windows.Forms.DockStyle.Left;
             this.pan_thongtin.Location = new System.Drawing.Point(5, 60);
             this.pan_thongtin.Name = "pan_thongtin";
-            this.pan_thongtin.Size = new System.Drawing.Size(419, 509);
+            this.pan_thongtin.Size = new System.Drawing.Size(419, 503);
             this.pan_thongtin.TabIndex = 30;
             // 
             // panel_tt
@@ -288,7 +287,7 @@
             this.panel_tt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_tt.Location = new System.Drawing.Point(0, 297);
             this.panel_tt.Name = "panel_tt";
-            this.panel_tt.Size = new System.Drawing.Size(419, 212);
+            this.panel_tt.Size = new System.Drawing.Size(419, 206);
             this.panel_tt.TabIndex = 30;
             // 
             // maNVTextBox
@@ -388,7 +387,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(424, 137);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(872, 432);
+            this.panel1.Size = new System.Drawing.Size(872, 426);
             this.panel1.TabIndex = 32;
             // 
             // nHANVIENDataGridViewX
@@ -416,7 +415,7 @@
             this.nHANVIENDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.nHANVIENDataGridViewX.Location = new System.Drawing.Point(0, 0);
             this.nHANVIENDataGridViewX.Name = "nHANVIENDataGridViewX";
-            this.nHANVIENDataGridViewX.Size = new System.Drawing.Size(868, 428);
+            this.nHANVIENDataGridViewX.Size = new System.Drawing.Size(868, 422);
             this.nHANVIENDataGridViewX.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -512,7 +511,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1301, 571);
+            this.ClientSize = new System.Drawing.Size(1301, 565);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pan_thongtin);

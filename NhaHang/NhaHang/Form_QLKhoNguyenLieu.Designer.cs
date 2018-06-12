@@ -409,7 +409,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(410, 503);
+            this.groupPanel1.Size = new System.Drawing.Size(410, 499);
             // 
             // 
             // 
@@ -467,7 +467,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(404, 481);
+            this.panel3.Size = new System.Drawing.Size(404, 477);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -477,7 +477,7 @@
             this.panel5.Controls.Add(this.btnHuy);
             this.panel5.Controls.Add(this.btn_Luu);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 236);
+            this.panel5.Location = new System.Drawing.Point(0, 232);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(404, 62);
             this.panel5.TabIndex = 59;
@@ -653,7 +653,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.cT_PHIEUNHAPDataGridViewX);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 298);
+            this.panel4.Location = new System.Drawing.Point(0, 294);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(404, 183);
             this.panel4.TabIndex = 29;
@@ -718,7 +718,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(404, 481);
+            this.panel2.Size = new System.Drawing.Size(404, 477);
             this.panel2.TabIndex = 0;
             // 
             // groupPanel4
@@ -729,7 +729,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel4.Location = new System.Drawing.Point(415, 312);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(475, 192);
+            this.groupPanel4.Size = new System.Drawing.Size(475, 188);
             // 
             // 
             // 
@@ -779,7 +779,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 171);
+            this.panel1.Size = new System.Drawing.Size(469, 167);
             this.panel1.TabIndex = 0;
             // 
             // kLTonTextBoxX
@@ -867,7 +867,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupPanel3.Location = new System.Drawing.Point(890, 312);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(491, 192);
+            this.groupPanel3.Size = new System.Drawing.Size(491, 188);
             // 
             // 
             // 
@@ -932,7 +932,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.nguyenLieu2DataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.nguyenLieu2DataGridViewX.Size = new System.Drawing.Size(485, 171);
+            this.nguyenLieu2DataGridViewX.Size = new System.Drawing.Size(485, 167);
             this.nguyenLieu2DataGridViewX.TabIndex = 1;
             // 
             // superTabItem1
@@ -1002,7 +1002,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1386, 506);
+            this.ClientSize = new System.Drawing.Size(1386, 502);
             this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel2);

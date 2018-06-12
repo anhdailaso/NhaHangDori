@@ -29,19 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_PhanQuyen));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label maNhomNguoiDungLabel;
             System.Windows.Forms.Label tenNhomLabel;
             System.Windows.Forms.Label ghiChuLabel;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_PhanQuyen));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.nHOMNGUOIDUNGDataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataDori = new NhaHang.DataDori();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnLast = new DevComponents.DotNetBar.ButtonX();
             this.btnNext = new DevComponents.DotNetBar.ButtonX();
@@ -54,34 +59,29 @@
             this.btn_xoa = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.pan_thongtin = new System.Windows.Forms.Panel();
+            this.maNhomNguoiDungTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.tenNhomTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.ghiChuTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_them = new DevComponents.DotNetBar.ButtonX();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pHANQUYENDataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.phanQuyen1DataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pHANQUYENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataDori = new NhaHang.DataDori();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.phanQuyen1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nHOMNGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btn_them = new DevComponents.DotNetBar.ButtonX();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pHANQUYENDataGridViewX = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pHANQUYENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nHOMNGUOIDUNGTableAdapter = new NhaHang.DataDoriTableAdapters.NHOMNGUOIDUNGTableAdapter();
             this.tableAdapterManager = new NhaHang.DataDoriTableAdapters.TableAdapterManager();
             this.pHANQUYENTableAdapter = new NhaHang.DataDoriTableAdapters.PHANQUYENTableAdapter();
             this.phanQuyen1TableAdapter = new NhaHang.DataDoriTableAdapters.PhanQuyen1TableAdapter();
             this.mANHINHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mANHINHTableAdapter = new NhaHang.DataDoriTableAdapters.MANHINHTableAdapter();
-            this.maNhomNguoiDungTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.tenNhomTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.ghiChuTextBoxX = new DevComponents.DotNetBar.Controls.TextBoxX();
             maNhomNguoiDungLabel = new System.Windows.Forms.Label();
             tenNhomLabel = new System.Windows.Forms.Label();
             ghiChuLabel = new System.Windows.Forms.Label();
@@ -90,20 +90,47 @@
             this.groupPanel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGDataGridViewX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.pan_thongtin.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1DataGridViewX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1BindingSource)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENDataGridViewX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1DataGridViewX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // maNhomNguoiDungLabel
+            // 
+            maNhomNguoiDungLabel.AutoSize = true;
+            maNhomNguoiDungLabel.Location = new System.Drawing.Point(11, 10);
+            maNhomNguoiDungLabel.Name = "maNhomNguoiDungLabel";
+            maNhomNguoiDungLabel.Size = new System.Drawing.Size(116, 13);
+            maNhomNguoiDungLabel.TabIndex = 0;
+            maNhomNguoiDungLabel.Text = "Ma Nhom Nguoi Dung:";
+            // 
+            // tenNhomLabel
+            // 
+            tenNhomLabel.AutoSize = true;
+            tenNhomLabel.Location = new System.Drawing.Point(11, 36);
+            tenNhomLabel.Name = "tenNhomLabel";
+            tenNhomLabel.Size = new System.Drawing.Size(60, 13);
+            tenNhomLabel.TabIndex = 2;
+            tenNhomLabel.Text = "Ten Nhom:";
+            // 
+            // ghiChuLabel
+            // 
+            ghiChuLabel.AutoSize = true;
+            ghiChuLabel.Location = new System.Drawing.Point(248, 10);
+            ghiChuLabel.Name = "ghiChuLabel";
+            ghiChuLabel.Size = new System.Drawing.Size(48, 13);
+            ghiChuLabel.TabIndex = 4;
+            ghiChuLabel.Text = "Ghi Chu:";
             // 
             // panel3
             // 
@@ -125,8 +152,7 @@
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.Size = new System.Drawing.Size(358, 55);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Phân Quyền</i><font color=\"#B02B2C\">Người Dùng</font></font" +
-    "></b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Phân Quyền Người Dùng</i></font></b>";
             // 
             // panel1
             // 
@@ -135,7 +161,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(5, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(511, 454);
+            this.panel1.Size = new System.Drawing.Size(511, 452);
             this.panel1.TabIndex = 8;
             // 
             // groupPanel2
@@ -147,7 +173,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(507, 450);
+            this.groupPanel2.Size = new System.Drawing.Size(507, 448);
             // 
             // 
             // 
@@ -189,7 +215,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 108);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(501, 321);
+            this.panel6.Size = new System.Drawing.Size(501, 319);
             this.panel6.TabIndex = 13;
             // 
             // nHOMNGUOIDUNGDataGridViewX
@@ -214,9 +240,38 @@
             this.nHOMNGUOIDUNGDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.nHOMNGUOIDUNGDataGridViewX.Location = new System.Drawing.Point(0, 70);
             this.nHOMNGUOIDUNGDataGridViewX.Name = "nHOMNGUOIDUNGDataGridViewX";
-            this.nHOMNGUOIDUNGDataGridViewX.Size = new System.Drawing.Size(425, 247);
+            this.nHOMNGUOIDUNGDataGridViewX.Size = new System.Drawing.Size(425, 245);
             this.nHOMNGUOIDUNGDataGridViewX.TabIndex = 14;
             this.nHOMNGUOIDUNGDataGridViewX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nHOMNGUOIDUNGDataGridViewX_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaNhomNguoiDung";
+            this.dataGridViewTextBoxColumn1.HeaderText = "MaNhomNguoiDung";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenNhom";
+            this.dataGridViewTextBoxColumn2.HeaderText = "TenNhom";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "GhiChu";
+            this.dataGridViewTextBoxColumn3.HeaderText = "GhiChu";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // nHOMNGUOIDUNGBindingSource
+            // 
+            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
+            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataDori;
+            // 
+            // dataDori
+            // 
+            this.dataDori.DataSetName = "DataDori";
+            this.dataDori.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel8
             // 
@@ -228,7 +283,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(425, 70);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(72, 247);
+            this.panel8.Size = new System.Drawing.Size(72, 245);
             this.panel8.TabIndex = 14;
             // 
             // btnLast
@@ -420,6 +475,46 @@
             this.pan_thongtin.Size = new System.Drawing.Size(501, 108);
             this.pan_thongtin.TabIndex = 12;
             // 
+            // maNhomNguoiDungTextBoxX
+            // 
+            // 
+            // 
+            // 
+            this.maNhomNguoiDungTextBoxX.Border.Class = "TextBoxBorder";
+            this.maNhomNguoiDungTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.maNhomNguoiDungTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHOMNGUOIDUNGBindingSource, "MaNhomNguoiDung", true));
+            this.maNhomNguoiDungTextBoxX.Location = new System.Drawing.Point(133, 7);
+            this.maNhomNguoiDungTextBoxX.Name = "maNhomNguoiDungTextBoxX";
+            this.maNhomNguoiDungTextBoxX.Size = new System.Drawing.Size(100, 20);
+            this.maNhomNguoiDungTextBoxX.TabIndex = 1;
+            // 
+            // tenNhomTextBoxX
+            // 
+            // 
+            // 
+            // 
+            this.tenNhomTextBoxX.Border.Class = "TextBoxBorder";
+            this.tenNhomTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tenNhomTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHOMNGUOIDUNGBindingSource, "TenNhom", true));
+            this.tenNhomTextBoxX.Location = new System.Drawing.Point(133, 33);
+            this.tenNhomTextBoxX.Name = "tenNhomTextBoxX";
+            this.tenNhomTextBoxX.Size = new System.Drawing.Size(100, 20);
+            this.tenNhomTextBoxX.TabIndex = 3;
+            // 
+            // ghiChuTextBoxX
+            // 
+            // 
+            // 
+            // 
+            this.ghiChuTextBoxX.Border.Class = "TextBoxBorder";
+            this.ghiChuTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ghiChuTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHOMNGUOIDUNGBindingSource, "GhiChu", true));
+            this.ghiChuTextBoxX.Location = new System.Drawing.Point(302, 7);
+            this.ghiChuTextBoxX.Multiline = true;
+            this.ghiChuTextBoxX.Name = "ghiChuTextBoxX";
+            this.ghiChuTextBoxX.Size = new System.Drawing.Size(189, 93);
+            this.ghiChuTextBoxX.TabIndex = 5;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -428,7 +523,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(516, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 454);
+            this.panel2.Size = new System.Drawing.Size(280, 452);
             this.panel2.TabIndex = 9;
             // 
             // panel5
@@ -439,57 +534,8 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 43);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(276, 407);
+            this.panel5.Size = new System.Drawing.Size(276, 405);
             this.panel5.TabIndex = 6;
-            // 
-            // btn_them
-            // 
-            this.btn_them.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_them.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_them.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_them.Location = new System.Drawing.Point(0, 0);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(276, 43);
-            this.btn_them.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_them.TabIndex = 5;
-            this.btn_them.Text = "cập nhật";
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.pHANQUYENDataGridViewX);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(796, 70);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(401, 454);
-            this.panel4.TabIndex = 10;
-            // 
-            // pHANQUYENDataGridViewX
-            // 
-            this.pHANQUYENDataGridViewX.AutoGenerateColumns = false;
-            this.pHANQUYENDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.pHANQUYENDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pHANQUYENDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewCheckBoxColumn1});
-            this.pHANQUYENDataGridViewX.DataSource = this.pHANQUYENBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.pHANQUYENDataGridViewX.DefaultCellStyle = dataGridViewCellStyle3;
-            this.pHANQUYENDataGridViewX.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pHANQUYENDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.pHANQUYENDataGridViewX.Location = new System.Drawing.Point(0, 0);
-            this.pHANQUYENDataGridViewX.Name = "pHANQUYENDataGridViewX";
-            this.pHANQUYENDataGridViewX.Size = new System.Drawing.Size(397, 450);
-            this.pHANQUYENDataGridViewX.TabIndex = 0;
             // 
             // phanQuyen1DataGridViewX
             // 
@@ -513,36 +559,8 @@
             this.phanQuyen1DataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.phanQuyen1DataGridViewX.Location = new System.Drawing.Point(0, 0);
             this.phanQuyen1DataGridViewX.Name = "phanQuyen1DataGridViewX";
-            this.phanQuyen1DataGridViewX.Size = new System.Drawing.Size(272, 403);
+            this.phanQuyen1DataGridViewX.Size = new System.Drawing.Size(272, 401);
             this.phanQuyen1DataGridViewX.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "MaNhomNguoiDung";
-            this.dataGridViewTextBoxColumn4.HeaderText = "MaNhomNguoiDung";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "MaManHinh";
-            this.dataGridViewTextBoxColumn5.HeaderText = "MaManHinh";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "CoQuyen";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "CoQuyen";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // pHANQUYENBindingSource
-            // 
-            this.pHANQUYENBindingSource.DataMember = "PHANQUYEN";
-            this.pHANQUYENBindingSource.DataSource = this.dataDori;
-            // 
-            // dataDori
-            // 
-            this.dataDori.DataSetName = "DataDori";
-            this.dataDori.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -568,29 +586,77 @@
             this.phanQuyen1BindingSource.DataMember = "PhanQuyen1";
             this.phanQuyen1BindingSource.DataSource = this.dataDori;
             // 
-            // dataGridViewTextBoxColumn1
+            // btn_them
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaNhomNguoiDung";
-            this.dataGridViewTextBoxColumn1.HeaderText = "MaNhomNguoiDung";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.btn_them.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_them.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_them.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_them.Location = new System.Drawing.Point(0, 0);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(276, 43);
+            this.btn_them.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_them.TabIndex = 5;
+            this.btn_them.Text = "cập nhật";
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // dataGridViewTextBoxColumn2
+            // panel4
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenNhom";
-            this.dataGridViewTextBoxColumn2.HeaderText = "TenNhom";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.pHANQUYENDataGridViewX);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(796, 70);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(401, 452);
+            this.panel4.TabIndex = 10;
             // 
-            // dataGridViewTextBoxColumn3
+            // pHANQUYENDataGridViewX
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "GhiChu";
-            this.dataGridViewTextBoxColumn3.HeaderText = "GhiChu";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.pHANQUYENDataGridViewX.AutoGenerateColumns = false;
+            this.pHANQUYENDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.pHANQUYENDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pHANQUYENDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewCheckBoxColumn1});
+            this.pHANQUYENDataGridViewX.DataSource = this.pHANQUYENBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.pHANQUYENDataGridViewX.DefaultCellStyle = dataGridViewCellStyle3;
+            this.pHANQUYENDataGridViewX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pHANQUYENDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.pHANQUYENDataGridViewX.Location = new System.Drawing.Point(0, 0);
+            this.pHANQUYENDataGridViewX.Name = "pHANQUYENDataGridViewX";
+            this.pHANQUYENDataGridViewX.Size = new System.Drawing.Size(397, 448);
+            this.pHANQUYENDataGridViewX.TabIndex = 0;
             // 
-            // nHOMNGUOIDUNGBindingSource
+            // dataGridViewTextBoxColumn4
             // 
-            this.nHOMNGUOIDUNGBindingSource.DataMember = "NHOMNGUOIDUNG";
-            this.nHOMNGUOIDUNGBindingSource.DataSource = this.dataDori;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "MaNhomNguoiDung";
+            this.dataGridViewTextBoxColumn4.HeaderText = "MaNhomNguoiDung";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "MaManHinh";
+            this.dataGridViewTextBoxColumn5.HeaderText = "MaManHinh";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "CoQuyen";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "CoQuyen";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // pHANQUYENBindingSource
+            // 
+            this.pHANQUYENBindingSource.DataMember = "PHANQUYEN";
+            this.pHANQUYENBindingSource.DataSource = this.dataDori;
             // 
             // nHOMNGUOIDUNGTableAdapter
             // 
@@ -648,79 +714,12 @@
             // 
             this.mANHINHTableAdapter.ClearBeforeFill = true;
             // 
-            // maNhomNguoiDungLabel
-            // 
-            maNhomNguoiDungLabel.AutoSize = true;
-            maNhomNguoiDungLabel.Location = new System.Drawing.Point(11, 10);
-            maNhomNguoiDungLabel.Name = "maNhomNguoiDungLabel";
-            maNhomNguoiDungLabel.Size = new System.Drawing.Size(116, 13);
-            maNhomNguoiDungLabel.TabIndex = 0;
-            maNhomNguoiDungLabel.Text = "Ma Nhom Nguoi Dung:";
-            // 
-            // maNhomNguoiDungTextBoxX
-            // 
-            // 
-            // 
-            // 
-            this.maNhomNguoiDungTextBoxX.Border.Class = "TextBoxBorder";
-            this.maNhomNguoiDungTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.maNhomNguoiDungTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHOMNGUOIDUNGBindingSource, "MaNhomNguoiDung", true));
-            this.maNhomNguoiDungTextBoxX.Location = new System.Drawing.Point(133, 7);
-            this.maNhomNguoiDungTextBoxX.Name = "maNhomNguoiDungTextBoxX";
-            this.maNhomNguoiDungTextBoxX.Size = new System.Drawing.Size(100, 20);
-            this.maNhomNguoiDungTextBoxX.TabIndex = 1;
-            // 
-            // tenNhomLabel
-            // 
-            tenNhomLabel.AutoSize = true;
-            tenNhomLabel.Location = new System.Drawing.Point(11, 36);
-            tenNhomLabel.Name = "tenNhomLabel";
-            tenNhomLabel.Size = new System.Drawing.Size(60, 13);
-            tenNhomLabel.TabIndex = 2;
-            tenNhomLabel.Text = "Ten Nhom:";
-            // 
-            // tenNhomTextBoxX
-            // 
-            // 
-            // 
-            // 
-            this.tenNhomTextBoxX.Border.Class = "TextBoxBorder";
-            this.tenNhomTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tenNhomTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHOMNGUOIDUNGBindingSource, "TenNhom", true));
-            this.tenNhomTextBoxX.Location = new System.Drawing.Point(133, 33);
-            this.tenNhomTextBoxX.Name = "tenNhomTextBoxX";
-            this.tenNhomTextBoxX.Size = new System.Drawing.Size(100, 20);
-            this.tenNhomTextBoxX.TabIndex = 3;
-            // 
-            // ghiChuLabel
-            // 
-            ghiChuLabel.AutoSize = true;
-            ghiChuLabel.Location = new System.Drawing.Point(248, 10);
-            ghiChuLabel.Name = "ghiChuLabel";
-            ghiChuLabel.Size = new System.Drawing.Size(48, 13);
-            ghiChuLabel.TabIndex = 4;
-            ghiChuLabel.Text = "Ghi Chu:";
-            // 
-            // ghiChuTextBoxX
-            // 
-            // 
-            // 
-            // 
-            this.ghiChuTextBoxX.Border.Class = "TextBoxBorder";
-            this.ghiChuTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ghiChuTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHOMNGUOIDUNGBindingSource, "GhiChu", true));
-            this.ghiChuTextBoxX.Location = new System.Drawing.Point(302, 7);
-            this.ghiChuTextBoxX.Multiline = true;
-            this.ghiChuTextBoxX.Name = "ghiChuTextBoxX";
-            this.ghiChuTextBoxX.Size = new System.Drawing.Size(189, 93);
-            this.ghiChuTextBoxX.TabIndex = 5;
-            // 
             // Form_PhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1202, 526);
+            this.ClientSize = new System.Drawing.Size(1202, 524);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -734,19 +733,19 @@
             this.groupPanel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGDataGridViewX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.pan_thongtin.ResumeLayout(false);
             this.pan_thongtin.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1DataGridViewX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1BindingSource)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENDataGridViewX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1DataGridViewX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pHANQUYENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phanQuyen1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nHOMNGUOIDUNGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mANHINHBindingSource)).EndInit();
             this.ResumeLayout(false);
 

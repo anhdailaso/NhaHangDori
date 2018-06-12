@@ -56,7 +56,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(667, 282);
+            this.panel2.Size = new System.Drawing.Size(667, 276);
             this.panel2.TabIndex = 6;
             // 
             // buttonX2
@@ -66,7 +66,7 @@
             this.buttonX2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonX2.Location = new System.Drawing.Point(331, 250);
             this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(332, 28);
+            this.buttonX2.Size = new System.Drawing.Size(332, 22);
             this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX2.TabIndex = 3;
             this.buttonX2.Text = "HỦY";
@@ -79,7 +79,7 @@
             this.buttonX1.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonX1.Location = new System.Drawing.Point(0, 250);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(331, 28);
+            this.buttonX1.Size = new System.Drawing.Size(331, 22);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX1.TabIndex = 2;
             this.buttonX1.Text = "GỘP BÀN";
@@ -88,6 +88,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -105,7 +106,7 @@
             this.btn_thoat.ImageFixedSize = new System.Drawing.Size(23, 23);
             this.btn_thoat.Location = new System.Drawing.Point(573, 10);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
             this.btn_thoat.Size = new System.Drawing.Size(80, 34);
             this.btn_thoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_thoat.TabIndex = 14;
@@ -123,10 +124,11 @@
             this.reflectionLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.reflectionLabel1.Size = new System.Drawing.Size(169, 53);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Gộp</i><font color=\"#B02B2C\">Bàn</font></font></b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Gộp Bàn</i></font></b>";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.reflectionLabel1);
@@ -189,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 347);
+            this.ClientSize = new System.Drawing.Size(677, 341);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

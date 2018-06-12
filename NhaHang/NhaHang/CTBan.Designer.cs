@@ -111,6 +111,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.reflectionLabel1);
@@ -131,7 +132,7 @@
             this.btn_thoat.ImageFixedSize = new System.Drawing.Size(23, 23);
             this.btn_thoat.Location = new System.Drawing.Point(491, 10);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
             this.btn_thoat.Size = new System.Drawing.Size(80, 34);
             this.btn_thoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_thoat.TabIndex = 14;
@@ -149,10 +150,11 @@
             this.reflectionLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.reflectionLabel1.Size = new System.Drawing.Size(169, 58);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quảng Lý</i><font color=\"#B02B2C\">Phòng</font></font></b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý Bàn</i></font></b>";
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel12.Controls.Add(this.btnThem);
             this.panel12.Controls.Add(this.btn_xoa);
@@ -260,6 +262,7 @@
             // panel_tt
             // 
             this.panel_tt.AutoScroll = true;
+            this.panel_tt.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel_tt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel_tt.Controls.Add(this.comboBoxEx1);
             this.panel_tt.Controls.Add(maBLabel);
@@ -367,7 +370,7 @@
             this.bANDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.bANDataGridViewX.Location = new System.Drawing.Point(5, 203);
             this.bANDataGridViewX.Name = "bANDataGridViewX";
-            this.bANDataGridViewX.Size = new System.Drawing.Size(581, 240);
+            this.bANDataGridViewX.Size = new System.Drawing.Size(581, 234);
             this.bANDataGridViewX.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn1
@@ -444,7 +447,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(591, 445);
+            this.ClientSize = new System.Drawing.Size(591, 439);
             this.Controls.Add(this.bANDataGridViewX);
             this.Controls.Add(this.panel_tt);
             this.Controls.Add(this.panel12);

@@ -98,47 +98,47 @@
             // maNLLabel
             // 
             maNLLabel.AutoSize = true;
-            maNLLabel.Location = new System.Drawing.Point(73, 26);
+            maNLLabel.Location = new System.Drawing.Point(23, 26);
             maNLLabel.Name = "maNLLabel";
-            maNLLabel.Size = new System.Drawing.Size(42, 13);
+            maNLLabel.Size = new System.Drawing.Size(88, 13);
             maNLLabel.TabIndex = 0;
-            maNLLabel.Text = "Ma NL:";
+            maNLLabel.Text = "Mã Nguyên Liệu:";
             // 
             // tenNLLabel
             // 
             tenNLLabel.AutoSize = true;
-            tenNLLabel.Location = new System.Drawing.Point(73, 52);
+            tenNLLabel.Location = new System.Drawing.Point(23, 52);
             tenNLLabel.Name = "tenNLLabel";
-            tenNLLabel.Size = new System.Drawing.Size(46, 13);
+            tenNLLabel.Size = new System.Drawing.Size(95, 13);
             tenNLLabel.TabIndex = 2;
-            tenNLLabel.Text = "Ten NL:";
+            tenNLLabel.Text = "Tên Nguyên Liệu :";
             // 
             // dVTLabel
             // 
             dVTLabel.AutoSize = true;
-            dVTLabel.Location = new System.Drawing.Point(73, 78);
+            dVTLabel.Location = new System.Drawing.Point(23, 78);
             dVTLabel.Name = "dVTLabel";
-            dVTLabel.Size = new System.Drawing.Size(32, 13);
+            dVTLabel.Size = new System.Drawing.Size(71, 13);
             dVTLabel.TabIndex = 4;
-            dVTLabel.Text = "DVT:";
+            dVTLabel.Text = "Đơn Vị Tính :";
             // 
             // maNCCLabel
             // 
             maNCCLabel.AutoSize = true;
-            maNCCLabel.Location = new System.Drawing.Point(73, 104);
+            maNCCLabel.Location = new System.Drawing.Point(23, 104);
             maNCCLabel.Name = "maNCCLabel";
-            maNCCLabel.Size = new System.Drawing.Size(50, 13);
+            maNCCLabel.Size = new System.Drawing.Size(83, 13);
             maNCCLabel.TabIndex = 6;
-            maNCCLabel.Text = "Ma NCC:";
+            maNCCLabel.Text = "Nhà Cung Cấp :";
             // 
             // kLTonLabel
             // 
             kLTonLabel.AutoSize = true;
-            kLTonLabel.Location = new System.Drawing.Point(73, 130);
+            kLTonLabel.Location = new System.Drawing.Point(23, 130);
             kLTonLabel.Name = "kLTonLabel";
-            kLTonLabel.Size = new System.Drawing.Size(42, 13);
+            kLTonLabel.Size = new System.Drawing.Size(83, 13);
             kLTonLabel.TabIndex = 10;
-            kLTonLabel.Text = "KLTon:";
+            kLTonLabel.Text = "Khối Lượn Tồn :";
             // 
             // panel2
             // 
@@ -160,8 +160,7 @@
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.Size = new System.Drawing.Size(246, 50);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý</i><font color=\"#B02B2C\"> Nguyên Liệu</font></font>" +
-    "</b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý Nguyên Liệu</i></font></b>";
             // 
             // panel1
             // 
@@ -171,7 +170,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(5, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(368, 475);
+            this.panel1.Size = new System.Drawing.Size(368, 471);
             this.panel1.TabIndex = 29;
             // 
             // panel_tt
@@ -191,7 +190,7 @@
             this.panel_tt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_tt.Location = new System.Drawing.Point(0, 244);
             this.panel_tt.Name = "panel_tt";
-            this.panel_tt.Size = new System.Drawing.Size(364, 227);
+            this.panel_tt.Size = new System.Drawing.Size(364, 223);
             this.panel_tt.TabIndex = 1;
             // 
             // comboBoxEx1
@@ -204,7 +203,7 @@
             this.comboBoxEx1.ItemHeight = 14;
             this.comboBoxEx1.Location = new System.Drawing.Point(133, 101);
             this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxEx1.Size = new System.Drawing.Size(186, 20);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx1.TabIndex = 12;
             this.comboBoxEx1.ValueMember = "MaNCC";
@@ -229,7 +228,7 @@
             this.maNLTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "MaNL", true));
             this.maNLTextBox.Location = new System.Drawing.Point(133, 23);
             this.maNLTextBox.Name = "maNLTextBox";
-            this.maNLTextBox.Size = new System.Drawing.Size(121, 20);
+            this.maNLTextBox.Size = new System.Drawing.Size(186, 20);
             this.maNLTextBox.TabIndex = 1;
             // 
             // tenNLTextBox
@@ -237,7 +236,7 @@
             this.tenNLTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "TenNL", true));
             this.tenNLTextBox.Location = new System.Drawing.Point(133, 49);
             this.tenNLTextBox.Name = "tenNLTextBox";
-            this.tenNLTextBox.Size = new System.Drawing.Size(121, 20);
+            this.tenNLTextBox.Size = new System.Drawing.Size(186, 20);
             this.tenNLTextBox.TabIndex = 3;
             // 
             // dVTTextBox
@@ -245,7 +244,7 @@
             this.dVTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "DVT", true));
             this.dVTTextBox.Location = new System.Drawing.Point(133, 75);
             this.dVTTextBox.Name = "dVTTextBox";
-            this.dVTTextBox.Size = new System.Drawing.Size(121, 20);
+            this.dVTTextBox.Size = new System.Drawing.Size(186, 20);
             this.dVTTextBox.TabIndex = 5;
             // 
             // kLTonTextBox
@@ -253,7 +252,7 @@
             this.kLTonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nGUYENLIEUBindingSource, "KLTon", true));
             this.kLTonTextBox.Location = new System.Drawing.Point(133, 127);
             this.kLTonTextBox.Name = "kLTonTextBox";
-            this.kLTonTextBox.Size = new System.Drawing.Size(121, 20);
+            this.kLTonTextBox.Size = new System.Drawing.Size(186, 20);
             this.kLTonTextBox.TabIndex = 11;
             // 
             // panel4
@@ -305,12 +304,13 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(373, 60);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(920, 475);
+            this.panel3.Size = new System.Drawing.Size(920, 471);
             this.panel3.TabIndex = 30;
             // 
             // nGUYENLIEUDataGridViewX
             // 
             this.nGUYENLIEUDataGridViewX.AutoGenerateColumns = false;
+            this.nGUYENLIEUDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -349,7 +349,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.nGUYENLIEUDataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.nGUYENLIEUDataGridViewX.Size = new System.Drawing.Size(861, 390);
+            this.nGUYENLIEUDataGridViewX.Size = new System.Drawing.Size(861, 386);
             this.nGUYENLIEUDataGridViewX.TabIndex = 24;
             // 
             // dataGridViewTextBoxColumn1
@@ -400,7 +400,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(861, 81);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(55, 390);
+            this.panel6.Size = new System.Drawing.Size(55, 386);
             this.panel6.TabIndex = 24;
             // 
             // btnNext
@@ -628,7 +628,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1298, 537);
+            this.ClientSize = new System.Drawing.Size(1298, 533);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);

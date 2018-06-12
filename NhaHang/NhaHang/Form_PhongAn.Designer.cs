@@ -225,7 +225,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel4.Location = new System.Drawing.Point(769, 312);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(521, 294);
+            this.groupPanel4.Size = new System.Drawing.Size(521, 288);
             // 
             // 
             // 
@@ -264,7 +264,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(515, 174);
+            this.panel4.Size = new System.Drawing.Size(515, 168);
             this.panel4.TabIndex = 3;
             // 
             // monAnTheoPDDataGridViewX
@@ -285,7 +285,7 @@
             this.monAnTheoPDDataGridViewX.Name = "monAnTheoPDDataGridViewX";
             this.monAnTheoPDDataGridViewX.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.monAnTheoPDDataGridViewX.RowHeadersVisible = false;
-            this.monAnTheoPDDataGridViewX.Size = new System.Drawing.Size(515, 174);
+            this.monAnTheoPDDataGridViewX.Size = new System.Drawing.Size(515, 168);
             this.monAnTheoPDDataGridViewX.TabIndex = 0;
             // 
             // panel3
@@ -304,7 +304,7 @@
             this.panel3.Controls.Add(this.labelX5);
             this.panel3.Controls.Add(this.btn_thanhtoan);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 174);
+            this.panel3.Location = new System.Drawing.Point(0, 168);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(515, 99);
             this.panel3.TabIndex = 2;
@@ -465,7 +465,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupPanel3.Location = new System.Drawing.Point(415, 312);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(354, 294);
+            this.groupPanel3.Size = new System.Drawing.Size(354, 288);
             // 
             // 
             // 
@@ -769,7 +769,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(410, 605);
+            this.groupPanel1.Size = new System.Drawing.Size(410, 599);
             // 
             // 
             // 
@@ -808,7 +808,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 191);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(404, 390);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(404, 384);
             this.flowLayoutPanel1.TabIndex = 14;
             // 
             // panel1
@@ -1138,7 +1138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1295, 608);
+            this.ClientSize = new System.Drawing.Size(1295, 602);
             this.Controls.Add(this.lOAIPHONGBindingNavigator);
             this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.groupPanel3);

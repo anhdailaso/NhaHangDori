@@ -35,6 +35,7 @@
     <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.ChartView">
+      <HintPath>..\..\..\..\AppData\Roaming\Telerik\Updates\Telerik_UI_For_WinForms_2018_1_220_Trial_dlls\Bin40\Telerik.WinControls.ChartView.dll</HintPath>
+    </Reference>
     <Reference Include="Telerik.WinControls.GridView, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
     <Reference Include="TelerikCommon, Version=2018.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
@@ -69,6 +73,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataDori.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ThongKe.Designer.cs">
+      <DependentUpon>Form_ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="FormKhachHang.cs">
       <SubType>Form</SubType>
@@ -160,6 +170,12 @@
     <Compile Include="Form_ResetPass.Designer.cs">
       <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_TonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TonKho.Designer.cs">
+      <DependentUpon>Form_TonKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="MaTuTong.cs" />
     <Compile Include="NguyenLieu.cs">
       <SubType>Form</SubType>
@@ -198,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CTPhong.resx">
       <DependentUpon>CTPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ThongKe.resx">
+      <DependentUpon>Form_ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
@@ -243,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ResetPass.resx">
       <DependentUpon>Form_ResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TonKho.resx">
+      <DependentUpon>Form_TonKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NguyenLieu.resx">
       <DependentUpon>NguyenLieu.cs</DependentUpon>

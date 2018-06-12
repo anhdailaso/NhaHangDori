@@ -37,7 +37,9 @@
             System.Windows.Forms.Label soCMNDLabel;
             System.Windows.Forms.Label diemTichLuyLabel;
             System.Windows.Forms.Label maLKHLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKhachHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
@@ -109,7 +111,7 @@
             // maKHLabel
             // 
             maKHLabel.AutoSize = true;
-            maKHLabel.Location = new System.Drawing.Point(182, 32);
+            maKHLabel.Location = new System.Drawing.Point(42, 33);
             maKHLabel.Name = "maKHLabel";
             maKHLabel.Size = new System.Drawing.Size(43, 13);
             maKHLabel.TabIndex = 0;
@@ -118,7 +120,7 @@
             // tenKHLabel
             // 
             tenKHLabel.AutoSize = true;
-            tenKHLabel.Location = new System.Drawing.Point(182, 58);
+            tenKHLabel.Location = new System.Drawing.Point(42, 59);
             tenKHLabel.Name = "tenKHLabel";
             tenKHLabel.Size = new System.Drawing.Size(47, 13);
             tenKHLabel.TabIndex = 2;
@@ -127,7 +129,7 @@
             // diaChiLabel
             // 
             diaChiLabel.AutoSize = true;
-            diaChiLabel.Location = new System.Drawing.Point(182, 84);
+            diaChiLabel.Location = new System.Drawing.Point(42, 85);
             diaChiLabel.Name = "diaChiLabel";
             diaChiLabel.Size = new System.Drawing.Size(44, 13);
             diaChiLabel.TabIndex = 4;
@@ -136,7 +138,7 @@
             // sDTLabel
             // 
             sDTLabel.AutoSize = true;
-            sDTLabel.Location = new System.Drawing.Point(182, 110);
+            sDTLabel.Location = new System.Drawing.Point(42, 111);
             sDTLabel.Name = "sDTLabel";
             sDTLabel.Size = new System.Drawing.Size(32, 13);
             sDTLabel.TabIndex = 6;
@@ -145,7 +147,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(182, 136);
+            emailLabel.Location = new System.Drawing.Point(343, 29);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 8;
@@ -154,7 +156,7 @@
             // soCMNDLabel
             // 
             soCMNDLabel.AutoSize = true;
-            soCMNDLabel.Location = new System.Drawing.Point(182, 162);
+            soCMNDLabel.Location = new System.Drawing.Point(343, 55);
             soCMNDLabel.Name = "soCMNDLabel";
             soCMNDLabel.Size = new System.Drawing.Size(58, 13);
             soCMNDLabel.TabIndex = 10;
@@ -163,7 +165,7 @@
             // diemTichLuyLabel
             // 
             diemTichLuyLabel.AutoSize = true;
-            diemTichLuyLabel.Location = new System.Drawing.Point(182, 188);
+            diemTichLuyLabel.Location = new System.Drawing.Point(343, 81);
             diemTichLuyLabel.Name = "diemTichLuyLabel";
             diemTichLuyLabel.Size = new System.Drawing.Size(78, 13);
             diemTichLuyLabel.TabIndex = 12;
@@ -172,7 +174,7 @@
             // maLKHLabel
             // 
             maLKHLabel.AutoSize = true;
-            maLKHLabel.Location = new System.Drawing.Point(182, 214);
+            maLKHLabel.Location = new System.Drawing.Point(343, 107);
             maLKHLabel.Name = "maLKHLabel";
             maLKHLabel.Size = new System.Drawing.Size(49, 13);
             maLKHLabel.TabIndex = 14;
@@ -198,8 +200,7 @@
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.Size = new System.Drawing.Size(267, 48);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý</i><font color=\"#B02B2C\"> Khách Hàng</font></font><" +
-    "/b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý Khách Hàng</i></font></b>";
             // 
             // panel2
             // 
@@ -208,7 +209,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 55);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1263, 478);
+            this.panel2.Size = new System.Drawing.Size(1263, 474);
             this.panel2.TabIndex = 3;
             // 
             // panel4
@@ -218,12 +219,21 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(583, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(680, 478);
+            this.panel4.Size = new System.Drawing.Size(680, 474);
             this.panel4.TabIndex = 1;
             // 
             // kHACHHANGDataGridViewX
             // 
             this.kHACHHANGDataGridViewX.AutoGenerateColumns = false;
+            this.kHACHHANGDataGridViewX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.kHACHHANGDataGridViewX.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.kHACHHANGDataGridViewX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kHACHHANGDataGridViewX.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -235,19 +245,28 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.kHACHHANGDataGridViewX.DataSource = this.kHACHHANGBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.kHACHHANGDataGridViewX.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.kHACHHANGDataGridViewX.DefaultCellStyle = dataGridViewCellStyle3;
             this.kHACHHANGDataGridViewX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kHACHHANGDataGridViewX.EnableHeadersVisualStyles = false;
             this.kHACHHANGDataGridViewX.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.kHACHHANGDataGridViewX.Location = new System.Drawing.Point(0, 0);
             this.kHACHHANGDataGridViewX.Name = "kHACHHANGDataGridViewX";
-            this.kHACHHANGDataGridViewX.Size = new System.Drawing.Size(592, 478);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.kHACHHANGDataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.kHACHHANGDataGridViewX.Size = new System.Drawing.Size(592, 474);
             this.kHACHHANGDataGridViewX.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -319,7 +338,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(592, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(88, 478);
+            this.panel7.Size = new System.Drawing.Size(88, 474);
             this.panel7.TabIndex = 0;
             // 
             // btnLast
@@ -331,7 +350,7 @@
             this.btnLast.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnLast.ImageTextSpacing = 1;
             this.btnLast.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLast.Location = new System.Drawing.Point(25, 349);
+            this.btnLast.Location = new System.Drawing.Point(25, 313);
             this.btnLast.Name = "btnLast";
             this.btnLast.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnLast.Size = new System.Drawing.Size(42, 68);
@@ -348,7 +367,7 @@
             this.btnNext.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnNext.ImageTextSpacing = 1;
             this.btnNext.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNext.Location = new System.Drawing.Point(25, 275);
+            this.btnNext.Location = new System.Drawing.Point(25, 239);
             this.btnNext.Name = "btnNext";
             this.btnNext.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnNext.Size = new System.Drawing.Size(42, 68);
@@ -365,7 +384,7 @@
             this.btnPre.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnPre.ImageTextSpacing = 1;
             this.btnPre.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPre.Location = new System.Drawing.Point(25, 201);
+            this.btnPre.Location = new System.Drawing.Point(25, 165);
             this.btnPre.Name = "btnPre";
             this.btnPre.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnPre.Size = new System.Drawing.Size(42, 68);
@@ -382,7 +401,7 @@
             this.btnFist.ImageFixedSize = new System.Drawing.Size(32, 32);
             this.btnFist.ImageTextSpacing = 1;
             this.btnFist.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnFist.Location = new System.Drawing.Point(25, 127);
+            this.btnFist.Location = new System.Drawing.Point(25, 91);
             this.btnFist.Name = "btnFist";
             this.btnFist.Shape = new DevComponents.DotNetBar.EllipticalShapeDescriptor();
             this.btnFist.Size = new System.Drawing.Size(42, 68);
@@ -399,7 +418,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(583, 478);
+            this.panel3.Size = new System.Drawing.Size(583, 474);
             this.panel3.TabIndex = 0;
             // 
             // panel_tt
@@ -423,9 +442,9 @@
             this.panel_tt.Controls.Add(this.diemTichLuyTextBoxX);
             this.panel_tt.Controls.Add(maLKHLabel);
             this.panel_tt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_tt.Location = new System.Drawing.Point(0, 142);
+            this.panel_tt.Location = new System.Drawing.Point(0, 143);
             this.panel_tt.Name = "panel_tt";
-            this.panel_tt.Size = new System.Drawing.Size(579, 332);
+            this.panel_tt.Size = new System.Drawing.Size(579, 327);
             this.panel_tt.TabIndex = 18;
             // 
             // comboBoxEx1
@@ -436,7 +455,7 @@
             this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBoxEx1.FormattingEnabled = true;
             this.comboBoxEx1.ItemHeight = 14;
-            this.comboBoxEx1.Location = new System.Drawing.Point(266, 214);
+            this.comboBoxEx1.Location = new System.Drawing.Point(427, 107);
             this.comboBoxEx1.Name = "comboBoxEx1";
             this.comboBoxEx1.Size = new System.Drawing.Size(121, 20);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -456,7 +475,7 @@
             this.maKHTextBoxX.Border.Class = "TextBoxBorder";
             this.maKHTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.maKHTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "MaKH", true));
-            this.maKHTextBoxX.Location = new System.Drawing.Point(266, 29);
+            this.maKHTextBoxX.Location = new System.Drawing.Point(126, 30);
             this.maKHTextBoxX.Name = "maKHTextBoxX";
             this.maKHTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.maKHTextBoxX.TabIndex = 1;
@@ -469,7 +488,7 @@
             this.tenKHTextBoxX.Border.Class = "TextBoxBorder";
             this.tenKHTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tenKHTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "TenKH", true));
-            this.tenKHTextBoxX.Location = new System.Drawing.Point(266, 55);
+            this.tenKHTextBoxX.Location = new System.Drawing.Point(126, 56);
             this.tenKHTextBoxX.Name = "tenKHTextBoxX";
             this.tenKHTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.tenKHTextBoxX.TabIndex = 3;
@@ -482,7 +501,7 @@
             this.diaChiTextBoxX.Border.Class = "TextBoxBorder";
             this.diaChiTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.diaChiTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "DiaChi", true));
-            this.diaChiTextBoxX.Location = new System.Drawing.Point(266, 81);
+            this.diaChiTextBoxX.Location = new System.Drawing.Point(126, 82);
             this.diaChiTextBoxX.Name = "diaChiTextBoxX";
             this.diaChiTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.diaChiTextBoxX.TabIndex = 5;
@@ -495,7 +514,7 @@
             this.sDTTextBoxX.Border.Class = "TextBoxBorder";
             this.sDTTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.sDTTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "SDT", true));
-            this.sDTTextBoxX.Location = new System.Drawing.Point(266, 107);
+            this.sDTTextBoxX.Location = new System.Drawing.Point(126, 108);
             this.sDTTextBoxX.Name = "sDTTextBoxX";
             this.sDTTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.sDTTextBoxX.TabIndex = 7;
@@ -508,7 +527,7 @@
             this.emailTextBoxX.Border.Class = "TextBoxBorder";
             this.emailTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.emailTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "Email", true));
-            this.emailTextBoxX.Location = new System.Drawing.Point(266, 133);
+            this.emailTextBoxX.Location = new System.Drawing.Point(427, 26);
             this.emailTextBoxX.Name = "emailTextBoxX";
             this.emailTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.emailTextBoxX.TabIndex = 9;
@@ -521,7 +540,7 @@
             this.soCMNDTextBoxX.Border.Class = "TextBoxBorder";
             this.soCMNDTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.soCMNDTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "SoCMND", true));
-            this.soCMNDTextBoxX.Location = new System.Drawing.Point(266, 159);
+            this.soCMNDTextBoxX.Location = new System.Drawing.Point(427, 52);
             this.soCMNDTextBoxX.Name = "soCMNDTextBoxX";
             this.soCMNDTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.soCMNDTextBoxX.TabIndex = 11;
@@ -534,7 +553,7 @@
             this.diemTichLuyTextBoxX.Border.Class = "TextBoxBorder";
             this.diemTichLuyTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.diemTichLuyTextBoxX.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "DiemTichLuy", true));
-            this.diemTichLuyTextBoxX.Location = new System.Drawing.Point(266, 185);
+            this.diemTichLuyTextBoxX.Location = new System.Drawing.Point(427, 78);
             this.diemTichLuyTextBoxX.Name = "diemTichLuyTextBoxX";
             this.diemTichLuyTextBoxX.Size = new System.Drawing.Size(121, 20);
             this.diemTichLuyTextBoxX.TabIndex = 13;
@@ -549,7 +568,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 71);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(579, 71);
+            this.panel6.Size = new System.Drawing.Size(579, 72);
             this.panel6.TabIndex = 1;
             // 
             // btn_huy
@@ -664,7 +683,7 @@
             this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxX1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textBoxX1.Location = new System.Drawing.Point(255, 23);
+            this.textBoxX1.Location = new System.Drawing.Point(268, 23);
             this.textBoxX1.Name = "textBoxX1";
             this.textBoxX1.Size = new System.Drawing.Size(223, 26);
             this.textBoxX1.TabIndex = 7;
@@ -673,7 +692,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(232, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(245, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(326, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -740,7 +759,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 535);
+            this.ClientSize = new System.Drawing.Size(1273, 531);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormKhachHang";

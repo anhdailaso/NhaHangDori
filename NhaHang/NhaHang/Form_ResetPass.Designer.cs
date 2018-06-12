@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ResetPass));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txt_tenDN = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -40,7 +41,13 @@
             this.textBoxX3 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.dataDori = new NhaHang.DataDori();
+            this.nGUOIDUNGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nGUOIDUNGTableAdapter = new NhaHang.DataDoriTableAdapters.NGUOIDUNGTableAdapter();
+            this.tableAdapterManager = new NhaHang.DataDoriTableAdapters.TableAdapterManager();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel1
@@ -62,7 +69,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Constantia", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(341, 333);
+            this.groupPanel1.Size = new System.Drawing.Size(350, 334);
             // 
             // 
             // 
@@ -156,6 +163,7 @@
             this.btn_thoat.TabIndex = 9;
             this.btn_thoat.Text = "<b>Thoát</b>";
             this.btn_thoat.TextColor = System.Drawing.Color.Red;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_capnhat
             // 
@@ -173,6 +181,7 @@
             this.btn_capnhat.TabIndex = 8;
             this.btn_capnhat.Text = "<b>Chấp Nhận</b>";
             this.btn_capnhat.TextColor = System.Drawing.Color.MediumBlue;
+            this.btn_capnhat.Click += new System.EventHandler(this.btn_capnhat_Click);
             // 
             // txt_passmoi
             // 
@@ -259,15 +268,69 @@
             this.textBoxX1.TabIndex = 0;
             this.textBoxX1.Text = "Mật khẩu củ:";
             // 
+            // dataDori
+            // 
+            this.dataDori.DataSetName = "DataDori";
+            this.dataDori.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nGUOIDUNGBindingSource
+            // 
+            this.nGUOIDUNGBindingSource.DataMember = "NGUOIDUNG";
+            this.nGUOIDUNGBindingSource.DataSource = this.dataDori;
+            // 
+            // nGUOIDUNGTableAdapter
+            // 
+            this.nGUOIDUNGTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BANTableAdapter = null;
+            this.tableAdapterManager.CONGTHUCMATableAdapter = null;
+            this.tableAdapterManager.CT_CONGTHUCTableAdapter = null;
+            this.tableAdapterManager.CT_DICHVUTableAdapter = null;
+            this.tableAdapterManager.CT_MONANTableAdapter = null;
+            this.tableAdapterManager.CT_PHIEUGIAOHANGTableAdapter = null;
+            this.tableAdapterManager.CT_PHIEUNHAPTableAdapter = null;
+            this.tableAdapterManager.DICHVUTableAdapter = null;
+            this.tableAdapterManager.HOADONTableAdapter = null;
+            this.tableAdapterManager.KHACHHANGTableAdapter = null;
+            this.tableAdapterManager.KHUVUCBANTableAdapter = null;
+            this.tableAdapterManager.KHUVUCPHONGTableAdapter = null;
+            this.tableAdapterManager.KHUVUCTableAdapter = null;
+            this.tableAdapterManager.LOAIKHTableAdapter = null;
+            this.tableAdapterManager.LOAIPHONGTableAdapter = null;
+            this.tableAdapterManager.MANHINHTableAdapter = null;
+            this.tableAdapterManager.MONANTableAdapter = null;
+            this.tableAdapterManager.NCCTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGNHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.NGUOIDUNGTableAdapter = this.nGUOIDUNGTableAdapter;
+            this.tableAdapterManager.NGUYENLIEUTableAdapter = null;
+            this.tableAdapterManager.NHANVIENTableAdapter = null;
+            this.tableAdapterManager.NHOMMATableAdapter = null;
+            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
+            this.tableAdapterManager.PHANQUYENTableAdapter = null;
+            this.tableAdapterManager.PHIEUDATMONTableAdapter = null;
+            this.tableAdapterManager.PHIEUDATVETableAdapter = null;
+            this.tableAdapterManager.PHIEUGIAOHANGTableAdapter = null;
+            this.tableAdapterManager.PHIEUNHAPTableAdapter = null;
+            this.tableAdapterManager.PHONGTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = NhaHang.DataDoriTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // Form_ResetPass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 336);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(360, 337);
             this.Controls.Add(this.groupPanel1);
             this.Name = "Form_ResetPass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_ResetPass";
+            this.Load += new System.EventHandler(this.Form_ResetPass_Load);
             this.groupPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataDori)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGUOIDUNGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,5 +348,9 @@
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX3;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
+        private DataDori dataDori;
+        private System.Windows.Forms.BindingSource nGUOIDUNGBindingSource;
+        private DataDoriTableAdapters.NGUOIDUNGTableAdapter nGUOIDUNGTableAdapter;
+        private DataDoriTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

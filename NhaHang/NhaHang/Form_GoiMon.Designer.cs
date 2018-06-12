@@ -339,7 +339,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupPanel1.Location = new System.Drawing.Point(5, 1);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(410, 529);
+            this.groupPanel1.Size = new System.Drawing.Size(410, 525);
             // 
             // 
             // 
@@ -369,7 +369,7 @@
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 3;
-            this.groupPanel1.Text = "danh sách bàn en";
+            this.groupPanel1.Text = "danh sách bàn ăn";
             // 
             // flowLayoutPanel1
             // 
@@ -379,7 +379,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 124);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(404, 381);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(404, 377);
             this.flowLayoutPanel1.TabIndex = 14;
             // 
             // contextMenuStrip1
@@ -512,7 +512,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel4.Location = new System.Drawing.Point(769, 312);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(560, 218);
+            this.groupPanel4.Size = new System.Drawing.Size(560, 214);
             // 
             // 
             // 
@@ -551,7 +551,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(554, 98);
+            this.panel4.Size = new System.Drawing.Size(554, 94);
             this.panel4.TabIndex = 3;
             // 
             // monAnTheoPDDataGridViewX
@@ -579,7 +579,7 @@
             this.monAnTheoPDDataGridViewX.Name = "monAnTheoPDDataGridViewX";
             this.monAnTheoPDDataGridViewX.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.monAnTheoPDDataGridViewX.RowHeadersVisible = false;
-            this.monAnTheoPDDataGridViewX.Size = new System.Drawing.Size(554, 98);
+            this.monAnTheoPDDataGridViewX.Size = new System.Drawing.Size(554, 94);
             this.monAnTheoPDDataGridViewX.TabIndex = 0;
             this.monAnTheoPDDataGridViewX.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.monAnTheoPDDataGridViewX_RowStateChanged);
             // 
@@ -634,7 +634,7 @@
             this.panel3.Controls.Add(this.labelX5);
             this.panel3.Controls.Add(this.btn_thanhtoan);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 98);
+            this.panel3.Location = new System.Drawing.Point(0, 94);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(554, 99);
             this.panel3.TabIndex = 2;
@@ -803,7 +803,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupPanel3.Location = new System.Drawing.Point(415, 312);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(354, 218);
+            this.groupPanel3.Size = new System.Drawing.Size(354, 214);
             // 
             // 
             // 
@@ -1044,7 +1044,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1334, 532);
+            this.ClientSize = new System.Drawing.Size(1334, 528);
             this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel2);

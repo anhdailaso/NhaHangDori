@@ -145,9 +145,9 @@
             this.reflectionLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.reflectionLabel1.Location = new System.Drawing.Point(485, 5);
             this.reflectionLabel1.Name = "reflectionLabel1";
-            this.reflectionLabel1.Size = new System.Drawing.Size(231, 50);
+            this.reflectionLabel1.Size = new System.Drawing.Size(286, 50);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Hệ Thống</i><font color=\"#B02B2C\">Bàn</font></font></b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý Bàn Khu Vực</i></font></b>";
             // 
             // radialMenuItem6
             // 
@@ -191,7 +191,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(525, 464);
+            this.panel4.Size = new System.Drawing.Size(525, 458);
             this.panel4.TabIndex = 0;
             // 
             // panel5
@@ -204,7 +204,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(525, 63);
+            this.panel5.Size = new System.Drawing.Size(525, 57);
             this.panel5.TabIndex = 38;
             // 
             // btnThem
@@ -308,7 +308,7 @@
             this.panel6.Controls.Add(this.tinhTrangLabel);
             this.panel6.Controls.Add(this.tinhTrangComboBoxEx);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 63);
+            this.panel6.Location = new System.Drawing.Point(0, 57);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(525, 97);
             this.panel6.TabIndex = 37;
@@ -377,7 +377,7 @@
             // 
             this.panel3.Controls.Add(this.kHUVUCDataGridViewX);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 160);
+            this.panel3.Location = new System.Drawing.Point(0, 154);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(525, 304);
             this.panel3.TabIndex = 36;
@@ -434,7 +434,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupPanel1.Location = new System.Drawing.Point(5, 62);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(531, 470);
+            this.groupPanel1.Size = new System.Drawing.Size(531, 464);
             // 
             // 
             // 
@@ -548,7 +548,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(536, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 470);
+            this.panel2.Size = new System.Drawing.Size(718, 464);
             this.panel2.TabIndex = 6;
             // 
             // panel7
@@ -557,7 +557,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(718, 470);
+            this.panel7.Size = new System.Drawing.Size(718, 464);
             this.panel7.TabIndex = 0;
             // 
             // tabControl1
@@ -571,7 +571,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(718, 470);
+            this.tabControl1.Size = new System.Drawing.Size(718, 464);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabControl1.Tabs.Add(this.tabItem2);
@@ -606,7 +606,7 @@
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel1.Size = new System.Drawing.Size(718, 444);
+            this.tabControlPanel1.Size = new System.Drawing.Size(718, 438);
             this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -645,7 +645,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 534);
+            this.ClientSize = new System.Drawing.Size(1259, 528);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.panel1);

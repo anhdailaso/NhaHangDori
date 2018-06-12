@@ -8,19 +8,23 @@ using DevComponents.DotNetBar;
 using DevComponents.DotNetBar.Controls;
 using DTODLL;
 using DAODLL;
+using System.Data;
+
 namespace BUSDLL
 {
     public class BUS_QL_NguoiDung
     {
         private static BUS_QL_NguoiDung instance;
         public static BUS_QL_NguoiDung Instance
-        { get
-            { if (instance == null)
+        {
+            get
+            {
+                if (instance == null)
                     instance = new BUS_QL_NguoiDung();
                 return instance;
             }
         }
-        public void login(CheckBoxX ckb_ghinho, TextBoxX txt_id, TextBoxX txt_password,Form login, Form main)
+        public void login(CheckBoxX ckb_ghinho, TextBoxX txt_id, TextBoxX txt_password, Form login, Form main)
         {
             if (string.IsNullOrEmpty(txt_id.Text.Trim()))
             {
@@ -36,7 +40,7 @@ namespace BUSDLL
             }
             if (DAO_QL_NguoiDung.Instances.Check_Config() == 0)
             {
-                ProcessLogin(ckb_ghinho,txt_id,txt_password,login,main);// Cấu hình phù hợp xử lý đăng nhập
+                ProcessLogin(ckb_ghinho, txt_id, txt_password, login, main);// Cấu hình phù hợp xử lý đăng nhập
             }
             if (DAO_QL_NguoiDung.Instances.Check_Config() == 1)
             {
@@ -47,7 +51,7 @@ namespace BUSDLL
                 MessageBox.Show("Chuỗi cấu hình không phù hợp");// Xử lý cấu hình
             }
         }
-        public void ProcessLogin(CheckBoxX ckb_ghinho,TextBoxX txt_id,TextBoxX txt_password ,Form login, Form main)
+        public void ProcessLogin(CheckBoxX ckb_ghinho, TextBoxX txt_id, TextBoxX txt_password, Form login, Form main)
         {
             string result;
             result = DAO_QL_NguoiDung.Instances.Check_User(txt_id.Text, txt_password.Text);
@@ -76,11 +80,30 @@ namespace BUSDLL
             login.Hide();
             main.ShowDialog();
         }
-        public void savecauhinh(ComboBoxEx cbb_server,ComboBoxEx cbb_data, TextBoxX txt_user,TextBoxX txt_pass)
+        public void savecauhinh(ComboBoxEx cbb_server, ComboBoxEx cbb_data, TextBoxX txt_user, TextBoxX txt_pass)
         {
             DAO_QL_NguoiDung.Instances.ChangeConnectionString(cbb_server.Text, cbb_data.Text,
             txt_user.Text, txt_pass.Text);
             MessageBox.Show("bạn đã thây đổi cấu hình mới");
+        }
+        public DataTable GetServerName()
+        {
+            System.Data.DataTable table = DAO_QL_NguoiDung.Instances.GetServerName();
+            return table;
+        }
+        public List<string> GetDatabaseName(string pServerName, string pUser, string pPass)
+        {
+            List<string> list = new List<string>();
+            try
+            {
+
+                list = DAO_QL_NguoiDung.Instances.GetDatabaseName(pServerName, pUser, pPass);
+            }
+            catch
+            {
+                return null;
+            }
+            return list;
         }
     }
 }

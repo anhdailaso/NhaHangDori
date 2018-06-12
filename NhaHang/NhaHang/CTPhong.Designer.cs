@@ -156,10 +156,11 @@
             this.reflectionLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.reflectionLabel1.Size = new System.Drawing.Size(169, 58);
             this.reflectionLabel1.TabIndex = 0;
-            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quảng Lý</i><font color=\"#B02B2C\">Phòng</font></font></b>";
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>Quản Lý Phòng</i></font></b>";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.reflectionLabel1);
@@ -180,7 +181,7 @@
             this.btn_thoat.ImageFixedSize = new System.Drawing.Size(23, 23);
             this.btn_thoat.Location = new System.Drawing.Point(533, 10);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(15);
+            this.btn_thoat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
             this.btn_thoat.Size = new System.Drawing.Size(80, 34);
             this.btn_thoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_thoat.TabIndex = 14;
@@ -196,7 +197,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(633, 309);
+            this.panel2.Size = new System.Drawing.Size(633, 303);
             this.panel2.TabIndex = 2;
             // 
             // panel6
@@ -206,7 +207,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 128);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(629, 177);
+            this.panel6.Size = new System.Drawing.Size(629, 171);
             this.panel6.TabIndex = 3;
             // 
             // pHONGDataGridViewX
@@ -251,7 +252,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.pHONGDataGridViewX.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.pHONGDataGridViewX.Size = new System.Drawing.Size(629, 177);
+            this.pHONGDataGridViewX.Size = new System.Drawing.Size(629, 171);
             this.pHONGDataGridViewX.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -311,6 +312,7 @@
             // panel_tt
             // 
             this.panel_tt.AutoScroll = true;
+            this.panel_tt.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel_tt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel_tt.Controls.Add(this.comboBoxEx2);
             this.panel_tt.Controls.Add(this.comboBoxEx1);
@@ -424,6 +426,7 @@
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel12.Controls.Add(this.btnThem);
             this.panel12.Controls.Add(this.btn_xoa);
@@ -580,7 +583,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(643, 369);
+            this.ClientSize = new System.Drawing.Size(643, 363);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "CTPhong";
